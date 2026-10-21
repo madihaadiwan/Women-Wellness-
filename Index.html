@@ -1,0 +1,2253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============ SEO ============ -->
+<title>Her Daily — Wellness, Beauty &amp; Everyday Life for Women</title>
+<meta name="description" content="Practical wellness, beauty, self-care, lifestyle and everyday living ideas for modern women. Simple information for better everyday life.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#FBF7F1">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Her Daily">
+<meta property="og:title" content="Her Daily — Wellness, Beauty &amp; Everyday Life for Women">
+<meta property="og:description" content="Practical wellness, beauty, self-care, lifestyle and everyday living ideas for modern women. Simple information for better everyday life.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+<!-- TODO: replace with your real GitHub Pages URL after deploying -->
+<meta property="og:url" content="https://yourusername.github.io/her-daily/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Structured data (replace url with your deployed address) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Her Daily",
+  "alternateName": "HER DAILY",
+  "description": "Practical wellness, beauty, self-care, lifestyle and everyday living ideas for modern women.",
+  "url": "https://yourusername.github.io/her-daily/",
+  "inLanguage": "en",
+  "publisher": { "@type": "Organization", "name": "Her Daily" }
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FBF7F1'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23A97C6F'%3EH%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================
+   HER DAILY — premium women's lifestyle magazine
+   Palette: ivory · cream · beige · dusty rose · sage · brown
+   ========================================================== */
+:root{
+  --ivory:#FBF7F1;
+  --cream:#F5EEE3;
+  --beige:#EBE1D2;
+  --rose:#C7A69C;
+  --rose-soft:#EFDCD3;
+  --rose-deep:#A97C6E;
+  --sage:#A9B49B;
+  --sage-deep:#71806A;
+  --ink:#322A22;
+  --ink-soft:#6B5F52;
+  --line:rgba(50,42,34,.14);
+  --white:#FFFFFF;
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --radius:20px;
+  --shadow-soft:0 24px 50px -24px rgba(50,42,34,.32);
+  --ease:cubic-bezier(.22,.7,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  font-size:1.02rem;
+  line-height:1.75;
+  color:var(--ink-soft);
+  background:var(--ivory);
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+::selection{background:var(--rose-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--rose-deep);outline-offset:3px;border-radius:4px}
+body.no-scroll{overflow:hidden}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;color:var(--ink);line-height:1.18;text-wrap:balance}
+
+/* ---------- utilities ---------- */
+.container{max-width:1240px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip-link{position:fixed;top:-60px;left:1rem;z-index:999;background:var(--ink);color:var(--ivory);padding:.7rem 1.2rem;border-radius:0 0 10px 10px;font-size:.85rem;transition:top .3s}
+.skip-link:focus{top:0}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.9rem;
+  font-size:.72rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--sage-deep);
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.55}
+.eyebrow.rose{color:var(--rose-deep)}
+.eyebrow.on-dark{color:#EFE2D2}
+.eyebrow.centered::after{content:"";width:34px;height:1px;background:currentColor;opacity:.55}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:1rem 2rem;border-radius:999px;border:1px solid transparent;
+  font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  transition:transform .35s var(--ease),background .35s,color .35s,border-color .35s,box-shadow .35s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-solid{background:var(--ink);color:var(--ivory)}
+.btn-solid:hover{background:#4A3F33;box-shadow:0 16px 30px -16px rgba(50,42,34,.5)}
+.btn-ivory{background:var(--ivory);color:var(--ink)}
+.btn-ivory:hover{background:#fff;box-shadow:0 16px 30px -14px rgba(20,15,10,.45)}
+.btn-ghost{border-color:rgba(251,247,241,.65);color:var(--ivory)}
+.btn-ghost:hover{background:rgba(251,247,241,.14);border-color:var(--ivory)}
+
+.icon-btn{
+  width:44px;height:44px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;
+  border:1px solid var(--line);color:var(--ink);background:transparent;
+  transition:background .3s,color .3s,border-color .3s,transform .3s;
+}
+.icon-btn:hover{background:var(--cream);transform:translateY(-1px)}
+.icon-btn svg{width:19px;height:19px}
+
+/* ---------- reveal on scroll ---------- */
+.js .reveal{opacity:0}
+.js .reveal.in-view{animation:rise .8s var(--ease) var(--d,0ms) forwards}
+.js .reveal.revealed{opacity:1}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.js .hero-inner{animation:rise 1s var(--ease) .2s backwards}
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+.site-header{
+  position:sticky;top:0;z-index:140;
+  background:rgba(251,247,241,.92);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;
+  transition:border-color .35s,box-shadow .35s,background .35s;
+}
+.site-header.scrolled{border-bottom-color:var(--line);box-shadow:0 12px 32px -22px rgba(50,42,34,.35)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:.9rem}
+.brand{display:flex;flex-direction:column;gap:.15rem;line-height:1.1}
+.brand-name{font-family:var(--serif);font-size:1.35rem;font-weight:600;letter-spacing:.16em;color:var(--ink)}
+.brand-tag{font-size:.58rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--sage-deep)}
+.primary-nav{display:flex;gap:1.6rem}
+.nav-link{
+  position:relative;font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-soft);padding-block:.4rem;transition:color .3s;
+}
+.nav-link::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;
+  background:var(--rose-deep);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);
+}
+.nav-link:hover,.nav-link.active{color:var(--ink)}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
+.header-actions{display:flex;gap:.6rem;align-items:center}
+.menu-btn{display:none}
+.menu-btn .icon-close{display:none}
+.menu-btn.open .icon-menu{display:none}
+.menu-btn.open .icon-close{display:block}
+
+/* ---------- mobile drawer ---------- */
+.mobile-nav{
+  position:fixed;inset:0;z-index:120;background:var(--ivory);
+  padding:6.5rem 2rem 2.5rem;display:flex;flex-direction:column;
+  transform:translateX(105%);visibility:hidden;
+  transition:transform .5s var(--ease),visibility .5s;
+}
+.mobile-nav.open{transform:none;visibility:visible}
+.mobile-link{
+  display:flex;align-items:baseline;justify-content:space-between;
+  font-family:var(--serif);font-size:clamp(1.7rem,7vw,2.1rem);color:var(--ink);
+  padding:.85rem .25rem;border-bottom:1px solid var(--line);transition:color .3s,padding-left .3s;
+}
+.mobile-link em{font-family:var(--sans);font-style:normal;font-size:.7rem;font-weight:700;letter-spacing:.25em;color:var(--rose-deep)}
+.mobile-link:hover{color:var(--rose-deep);padding-left:.7rem}
+.mobile-nav-note{margin-top:auto;font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--sage-deep)}
+
+/* ==========================================================
+   SEARCH OVERLAY
+   ========================================================== */
+.search-overlay{
+  position:fixed;inset:0;z-index:160;overflow-y:auto;
+  background:rgba(251,247,241,.98);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s;
+}
+.search-overlay.open{opacity:1;visibility:visible}
+.search-inner{position:relative;padding-top:clamp(3rem,9vh,5.5rem);padding-bottom:4rem}
+.search-close{position:absolute;top:1.25rem;right:clamp(1.25rem,4vw,2.5rem)}
+.search-title{font-size:clamp(1.9rem,5vw,2.9rem);margin:1rem 0 1.75rem}
+.search-field{
+  display:flex;align-items:center;gap:1rem;
+  border-bottom:1px solid var(--ink);padding-bottom:.8rem;
+  transition:border-color .3s;
+}
+.search-field:focus-within{border-color:var(--rose-deep)}
+.search-field svg{width:22px;height:22px;color:var(--ink-soft);flex:none}
+.search-field input{
+  flex:1;border:0;background:transparent;outline:none;
+  font-family:var(--serif);font-size:clamp(1.15rem,3vw,1.5rem);color:var(--ink);
+}
+.search-field input::placeholder{color:#B9AC9C}
+.search-results{margin-top:2rem;display:grid;gap:.6rem}
+.search-hint,.search-empty{font-size:.95rem;color:var(--ink-soft);padding:.4rem 0}
+.search-result{
+  display:flex;align-items:center;gap:1.1rem;text-align:left;
+  padding:.7rem;border-radius:14px;transition:background .25s;
+}
+.search-result:hover,.search-result:focus-visible{background:var(--cream)}
+.search-result img{width:74px;height:56px;object-fit:cover;border-radius:9px;flex:none;background:var(--beige)}
+.sr-text{display:flex;flex-direction:column;gap:.1rem;min-width:0}
+.sr-cat{font-size:.62rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-deep)}
+.sr-title{font-family:var(--serif);font-size:1.08rem;color:var(--ink);line-height:1.3}
+.sr-meta{font-size:.78rem;color:var(--ink-soft)}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.hero{position:relative;display:flex;align-items:flex-end;min-height:min(92vh,880px);overflow:hidden;background:var(--beige)}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(to top,rgba(36,29,23,.74) 0%,rgba(36,29,23,.28) 36%,rgba(36,29,23,0) 62%),
+    linear-gradient(to right,rgba(36,29,23,.42),rgba(36,29,23,0) 58%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:clamp(3rem,7vw,5rem);padding-top:6rem}
+.hero-label{
+  display:inline-flex;align-items:center;gap:1rem;
+  font-size:.72rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:#F3E9DC;
+}
+.hero-label::before,.hero-label::after{content:"";width:38px;height:1px;background:rgba(243,233,220,.7)}
+.hero-title{
+  color:#FDFBF7;font-size:clamp(2.35rem,6.5vw,4.6rem);font-weight:500;line-height:1.06;
+  margin:1.4rem 0 1.3rem;max-width:15ch;
+}
+.hero-title em{font-style:italic;color:#EBCFC1}
+.hero-sub{max-width:44ch;font-size:clamp(1rem,2vw,1.18rem);line-height:1.7;color:rgba(251,246,239,.92)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem}
+
+/* ==========================================================
+   SECTIONS
+   ========================================================== */
+.section{padding-block:clamp(4.25rem,9vw,7rem)}
+.section--white{background:var(--white)}
+.section--cream{background:var(--cream)}
+
+.section-banner{
+  position:relative;border-radius:26px;overflow:hidden;margin-bottom:clamp(2.25rem,5vw,3.25rem);
+  background:var(--beige);
+}
+.section-banner img{width:100%;height:clamp(330px,46vw,540px);object-fit:cover}
+.section-banner::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(36,29,23,.74),rgba(36,29,23,.14) 55%,rgba(36,29,23,0));
+}
+.banner-content{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:clamp(1.4rem,4vw,2.75rem)}
+.banner-title{color:#FDFBF7;font-size:clamp(1.75rem,4.5vw,3.1rem);margin:1rem 0 .6rem}
+.banner-sub{max-width:56ch;color:rgba(251,246,239,.9);font-size:clamp(.95rem,1.8vw,1.1rem)}
+
+.grid-head{
+  display:flex;align-items:center;gap:1.1rem;margin-bottom:1.4rem;
+  font-size:.72rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);
+}
+.grid-head::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ---------- article cards ---------- */
+.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1.25rem,2.4vw,2rem)}
+.journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.25rem,2.4vw,2rem)}
+
+.article-card{
+  position:relative;display:flex;flex-direction:column;
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s;
+}
+.section--cream .article-card,.featured .article-card{background:var(--white)}
+.article-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-soft);border-color:rgba(50,42,34,.22)}
+.card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--beige)}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.article-card:hover .card-media img{transform:scale(1.045)}
+.card-chip{
+  position:absolute;top:.85rem;left:.85rem;z-index:2;
+  background:rgba(251,247,241,.92);color:var(--ink);
+  font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  padding:.42rem .75rem;border-radius:999px;
+}
+.card-body{display:flex;flex-direction:column;gap:.65rem;padding:1.35rem 1.4rem 1.5rem;flex:1}
+.card-title{font-size:1.26rem;line-height:1.32}
+.card-link-cover{color:inherit}
+.card-link-cover::after{content:"";position:absolute;inset:0;z-index:3;border-radius:inherit}
+.article-card:hover .card-title{color:var(--rose-deep)}
+.card-excerpt{font-size:.93rem;line-height:1.65}
+.card-link{
+  margin-top:auto;display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-deep);
+  transition:color .3s;
+}
+.card-link svg{width:15px;height:15px;transition:transform .35s var(--ease)}
+.article-card:hover .card-link{color:var(--ink)}
+.article-card:hover .card-link svg{transform:translateX(5px)}
+.article-card.is-hidden{display:none}
+
+/* ==========================================================
+   INTRO
+   ========================================================== */
+.intro{padding-block:clamp(4.25rem,9vw,7rem)}
+.intro-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(2.25rem,5vw,4.75rem);align-items:center}
+.intro-media{position:relative}
+.intro-media img{aspect-ratio:4/5;width:100%;object-fit:cover;border-radius:24px;background:var(--beige)}
+.media-caption{
+  position:absolute;left:clamp(.9rem,3vw,1.6rem);bottom:clamp(.9rem,3vw,1.6rem);max-width:270px;
+  background:rgba(251,247,241,.94);border-radius:14px;padding:1rem 1.15rem;
+  font-family:var(--serif);font-style:italic;font-size:1.02rem;color:var(--ink);line-height:1.45;
+  box-shadow:0 18px 40px -20px rgba(50,42,34,.4);
+}
+.intro-content h2{font-size:clamp(1.9rem,4vw,2.7rem);margin:1.2rem 0 1.1rem}
+.intro-content .lead{font-size:1.08rem;max-width:56ch;margin-bottom:2.25rem}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.mini-card{
+  background:var(--white);border:1px solid var(--line);border-radius:16px;
+  padding:1.35rem 1.25rem;border-top:3px solid var(--rose-soft);
+  transition:transform .4s var(--ease),box-shadow .4s,border-color .4s;
+}
+.mini-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft);border-top-color:var(--rose)}
+.mini-icon{
+  width:42px;height:42px;border-radius:50%;background:var(--cream);
+  display:flex;align-items:center;justify-content:center;color:var(--sage-deep);margin-bottom:.9rem;
+}
+.mini-icon svg{width:19px;height:19px}
+.mini-card h3{font-size:1.12rem;margin-bottom:.35rem}
+.mini-card p{font-size:.88rem;line-height:1.6}
+
+/* ==========================================================
+   FEATURED GUIDE
+   ========================================================== */
+.featured{background:var(--beige);padding-block:clamp(4.5rem,9vw,7.25rem)}
+.featured-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:center}
+.featured-media{position:relative;padding:14px}
+.featured-media::before{content:"";position:absolute;inset:0;border:1px solid var(--rose);border-radius:26px}
+.featured-media img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;background:var(--cream)}
+.featured-content h2{font-size:clamp(1.9rem,4.2vw,2.9rem);margin:1.2rem 0 1rem}
+.featured-excerpt{font-size:1.05rem;max-width:52ch}
+.featured-meta{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:1.4rem 0 1.8rem}
+
+/* ==========================================================
+   JOURNAL
+   ========================================================== */
+.section-head{text-align:center;max-width:640px;margin:0 auto 2.5rem}
+.section-head h2{font-size:clamp(2rem,4.5vw,3rem);margin:1.1rem 0 .8rem}
+.sec-sub{font-size:1.02rem}
+.filter-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-bottom:2.5rem}
+.filter-btn{
+  padding:.62rem 1.35rem;border-radius:999px;border:1px solid var(--line);
+  font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+  transition:background .3s,color .3s,border-color .3s,transform .3s;
+}
+.filter-btn:hover{border-color:var(--ink);color:var(--ink);transform:translateY(-1px)}
+.filter-btn.active{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+
+/* ==========================================================
+   NEWSLETTER
+   ========================================================== */
+.newsletter{position:relative;overflow:hidden;padding-block:clamp(4.5rem,10vw,7.5rem);background:var(--ink)}
+.newsletter-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.newsletter-scrim{position:absolute;inset:0;background:linear-gradient(rgba(36,29,23,.72),rgba(36,29,23,.6));z-index:1}
+.newsletter-inner{position:relative;z-index:2;text-align:center;max-width:620px}
+.newsletter-inner h2{color:#FDFBF7;font-size:clamp(1.9rem,4.5vw,2.8rem);margin:1.1rem 0 1rem}
+.newsletter-inner p{color:rgba(251,246,239,.88)}
+.newsletter-form{display:flex;gap:.8rem;margin:2rem 0 .9rem}
+.newsletter-form input{
+  flex:1;padding:1rem 1.4rem;border-radius:999px;
+  border:1px solid rgba(251,247,241,.4);background:rgba(251,247,241,.12);color:#FDFBF7;
+  font:inherit;font-size:.95rem;outline:none;transition:border-color .3s,background .3s;min-width:0;
+}
+.newsletter-form input::placeholder{color:rgba(251,247,241,.55)}
+.newsletter-form input:focus{border-color:rgba(251,247,241,.85);background:rgba(251,247,241,.18)}
+.newsletter-form input.invalid{border-color:#E2A9A0}
+.newsletter-error{color:#F0C9BF;font-size:.9rem;margin:-.4rem 0 .9rem}
+.newsletter-success{
+  display:flex;align-items:center;justify-content:center;gap:.8rem;margin:2rem 0 .9rem;
+  background:rgba(251,247,241,.12);border:1px solid rgba(251,247,241,.35);border-radius:999px;
+  padding:1rem 1.6rem;color:#FDFBF7;font-size:.98rem;
+  animation:rise .6s var(--ease);
+}
+.success-icon{width:34px;height:34px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;flex:none;color:#2C3226}
+.success-icon svg{width:17px;height:17px}
+.newsletter-note{font-size:.8rem;color:rgba(251,246,239,.6)}
+
+/* ==========================================================
+   ABOUT
+   ========================================================== */
+.about{padding-block:clamp(4.25rem,9vw,7rem)}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.25rem,5vw,4.5rem);align-items:center}
+.about-media img{aspect-ratio:4/5;width:100%;object-fit:cover;border-radius:24px;background:var(--beige)}
+.about-content h2{font-size:clamp(1.9rem,4vw,2.7rem);margin:1.2rem 0 1.2rem}
+.about-content p{margin-bottom:1.15rem;max-width:58ch}
+.about-quote{
+  font-family:var(--serif);font-style:italic;font-size:1.3rem;line-height:1.5;color:var(--ink);
+  border-left:2px solid var(--rose);padding:.4rem 0 .4rem 1.4rem;margin:1.6rem 0 .9rem;
+}
+.about-sign{font-size:.82rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-deep)}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+.footer{background:#2A231B;color:#C4B7A5;padding:clamp(3.5rem,7vw,5rem) 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:clamp(2rem,5vw,3.5rem);margin-bottom:3rem}
+.footer-logo{font-family:var(--serif);font-size:1.85rem;font-weight:600;letter-spacing:.16em;color:#F5EEE3}
+.footer-tag{margin:.6rem 0 1.5rem;font-size:.95rem;max-width:30ch}
+.social-row{display:flex;gap:.7rem}
+.social-row a{
+  width:42px;height:42px;border-radius:50%;border:1px solid rgba(245,238,227,.28);
+  display:flex;align-items:center;justify-content:center;color:#EDE4D7;
+  transition:background .3s,color .3s,border-color .3s,transform .3s;
+}
+.social-row a:hover{background:var(--rose-deep);border-color:var(--rose-deep);color:#fff;transform:translateY(-2px)}
+.social-row svg{width:17px;height:17px}
+.footer-col h4{
+  font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:#8F8271;margin-bottom:1.15rem;
+}
+.footer-col li{margin-bottom:.55rem}
+.footer-col a{font-size:.95rem;color:#D8CCBA;transition:color .3s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{
+  border-top:1px solid rgba(245,238,227,.14);padding-top:1.5rem;
+  display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;
+  font-size:.85rem;color:#9C8F7D;
+}
+
+/* ---------- back to top ---------- */
+.to-top{
+  position:fixed;right:1.4rem;bottom:1.4rem;z-index:90;width:46px;height:46px;border-radius:50%;
+  background:var(--ink);color:var(--ivory);display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .4s,visibility .4s,transform .4s,background .3s;
+  box-shadow:0 14px 30px -12px rgba(50,42,34,.55);
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--rose-deep)}
+.to-top svg{width:18px;height:18px}
+
+/* ==========================================================
+   ARTICLE MODAL
+   ========================================================== */
+.modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:clamp(.8rem,3vw,2rem)}
+.modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(42,35,27,.6);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:fadeIn .35s both}
+.modal.closing .modal-backdrop{animation:fadeOut .25s both}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+
+.modal-panel{
+  position:relative;background:var(--ivory);width:min(880px,100%);max-height:92vh;
+  border-radius:22px;overflow:hidden;display:flex;flex-direction:column;
+  animation:panelIn .5s var(--ease) both;box-shadow:0 40px 90px -30px rgba(20,15,10,.5);
+}
+.modal.closing .modal-panel{animation:panelOut .25s both}
+@keyframes panelIn{from{opacity:0;transform:translateY(34px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes panelOut{from{opacity:1}to{opacity:0;transform:translateY(18px)}}
+
+.modal-close{
+  position:absolute;top:1.1rem;right:1.1rem;z-index:5;
+  background:rgba(251,247,241,.94);border:1px solid transparent;
+}
+.modal-close:hover{background:var(--ink);color:var(--ivory)}
+.modal-scroll{overflow-y:auto;overscroll-behavior:contain}
+.modal-figure{background:var(--beige)}
+.modal-figure img{width:100%;height:clamp(230px,42vw,420px);object-fit:cover}
+.modal-content{padding:clamp(1.75rem,5vw,3rem) clamp(1.25rem,5vw,3.25rem) 2.5rem}
+.modal-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;margin-bottom:1.1rem}
+.cat-chip{
+  background:var(--rose-soft);color:var(--rose-deep);
+  font-size:.62rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  padding:.45rem .85rem;border-radius:999px;
+}
+.modal-meta-text{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.modal-title{font-size:clamp(1.7rem,3.8vw,2.5rem);margin-bottom:.9rem}
+.modal-dek{font-family:var(--serif);font-style:italic;font-size:1.14rem;color:var(--ink-soft);line-height:1.55;margin-bottom:1.8rem;max-width:60ch}
+
+.article-body{max-width:66ch}
+.article-body p{margin-bottom:1.25rem}
+.article-body p:first-of-type::first-letter{
+  font-family:var(--serif);font-weight:600;font-size:3.6rem;line-height:.82;
+  float:left;padding:.35rem .6rem 0 0;color:var(--rose-deep);
+}
+.article-body h3{
+  font-size:1.35rem;margin:2rem 0 .9rem;padding-top:1.4rem;border-top:1px solid var(--line);
+}
+.article-body blockquote{
+  font-family:var(--serif);font-style:italic;font-size:1.4rem;line-height:1.45;color:var(--ink);
+  text-align:center;margin:2.2rem auto;padding:0 1rem;max-width:44ch;position:relative;
+}
+.article-body blockquote::before,.article-body blockquote::after{
+  content:"";display:block;width:44px;height:1px;background:var(--rose);margin:.9rem auto;
+}
+.modal-author{
+  margin-top:1.75rem;padding-top:1.4rem;border-top:1px solid var(--line);
+  font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-deep);
+}
+.modal-related{margin-top:2.5rem}
+.related-title{font-size:1.25rem;margin-bottom:1.1rem}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.related-card{
+  display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);
+  border-radius:14px;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s;
+}
+.related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+.related-card img{aspect-ratio:3/2;width:100%;object-fit:cover;background:var(--beige)}
+.related-text{display:flex;flex-direction:column;gap:.3rem;padding:.85rem .95rem 1rem}
+.related-cat{font-size:.58rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-deep)}
+.related-title-span{font-family:var(--serif);font-size:.95rem;line-height:1.35;color:var(--ink)}
+.modal-return{
+  display:inline-flex;align-items:center;gap:.5rem;margin-top:2.25rem;
+  font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);
+  transition:color .3s;
+}
+.modal-return:hover{color:var(--rose-deep)}
+.modal-return svg{width:14px;height:14px}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width:1024px){
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+  .journal-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:940px){
+  .intro-grid,.featured-grid,.about-grid{grid-template-columns:1fr}
+  .about-media{order:-1}
+  .featured-media{max-width:560px;margin-inline:auto}
+  .primary-nav{display:none}
+  .menu-btn{display:inline-flex}
+  .brand-tag{display:none}
+}
+@media (max-width:760px){
+  .footer-grid{grid-template-columns:1fr;gap:2.25rem}
+  .footer-bottom{justify-content:center;text-align:center}
+  .related-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .card-grid,.journal-grid{grid-template-columns:1fr}
+  .mini-grid{grid-template-columns:1fr}
+  .card-media{aspect-ratio:16/11}
+  .hero{min-height:82vh}
+  .hero-actions .btn{width:100%}
+  .newsletter-form{flex-direction:column}
+  .newsletter-form .btn{width:100%}
+  .section-banner img{height:clamp(340px,62vw,460px)}
+  .media-caption{position:static;max-width:none;margin-top:-1.5rem;margin-inline:1rem;box-shadow:none}
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js .reveal{opacity:1}
+}
+</style>
+</head>
+
+<body>
+<script>document.documentElement.classList.add('js');</script>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Her Daily — back to top">
+      <span class="brand-name">HER&nbsp;DAILY</span>
+      <span class="brand-tag">Wellness &nbsp;•&nbsp; Beauty &nbsp;•&nbsp; Life</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#wellness">Wellness</a>
+      <a class="nav-link" href="#beauty">Beauty</a>
+      <a class="nav-link" href="#daily-life">Daily Life</a>
+      <a class="nav-link" href="#style">Style</a>
+      <a class="nav-link" href="#productivity">Productivity</a>
+      <a class="nav-link" href="#articles">Articles</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Open search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="3.5" y1="7" x2="20.5" y2="7"/><line x1="3.5" y1="12" x2="20.5" y2="12"/><line x1="3.5" y1="17" x2="20.5" y2="17"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MOBILE NAV ================= -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <nav aria-label="Mobile navigation">
+    <a class="mobile-link" href="#home"><span>Home</span><em>01</em></a>
+    <a class="mobile-link" href="#wellness"><span>Wellness</span><em>02</em></a>
+    <a class="mobile-link" href="#beauty"><span>Beauty</span><em>03</em></a>
+    <a class="mobile-link" href="#daily-life"><span>Daily Life</span><em>04</em></a>
+    <a class="mobile-link" href="#style"><span>Style</span><em>05</em></a>
+    <a class="mobile-link" href="#productivity"><span>Productivity</span><em>06</em></a>
+    <a class="mobile-link" href="#articles"><span>Articles</span><em>07</em></a>
+  </nav>
+  <p class="mobile-nav-note">Wellness • Beauty • Life</p>
+</div>
+
+<!-- ================= SEARCH ================= -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search Her Daily">
+  <div class="search-inner container">
+    <button class="icon-btn search-close" id="searchClose" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+    <p class="eyebrow">Search Her Daily</p>
+    <h2 class="search-title">What are you looking for?</h2>
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+      <input type="search" id="searchInput" placeholder="Try “sleep”, “skincare”, “wardrobe”…" aria-label="Search articles">
+    </div>
+    <div class="search-results" id="searchResults" aria-live="polite">
+      <p class="search-hint">Popular right now: morning routines · skincare · wardrobe · planners</p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home" data-img-theme="wellness">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=2000&auto=format&fit=crop"
+         alt="Woman relaxing with a warm drink beside a bright window in an elegant, sunlit home"
+         fetchpriority="high" decoding="async">
+  </div>
+  <div class="container hero-inner">
+    <p class="hero-label">Welcome to Her Daily</p>
+    <h1 class="hero-title">Better Days Start With <em>Small Things.</em></h1>
+    <p class="hero-sub">Practical ideas for wellness, beauty, self-care and everyday life — made simple.</p>
+    <div class="hero-actions">
+      <a class="btn btn-ivory" href="#wellness">Explore Wellness</a>
+      <a class="btn btn-ghost" href="#articles">Read Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTRODUCTION ================= -->
+<section class="intro" id="intro" data-img-theme="wellness" aria-labelledby="intro-title">
+  <div class="container intro-grid">
+    <div class="intro-media reveal">
+      <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=1000&auto=format&fit=crop"
+           alt="Woman writing in her journal beside a cup of tea during a quiet morning at home"
+           loading="lazy" decoding="async">
+      <p class="media-caption">“Slow mornings, honest advice, and ideas that fit real life.”</p>
+    </div>
+    <div class="intro-content reveal">
+      <p class="eyebrow rose">Our Promise</p>
+      <h2 id="intro-title">A little help for everyday life</h2>
+      <p class="lead">Life doesn’t have to be perfect to feel good. From simple wellness habits and beauty routines to home organization and productivity, discover practical ideas that fit into real life.</p>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <span class="mini-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </span>
+          <h3>Feel Better</h3>
+          <p>Simple wellness and self-care ideas.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="4.6" y1="4.6" x2="6.4" y2="6.4"/><line x1="17.6" y1="17.6" x2="19.4" y2="19.4"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="4.6" y1="19.4" x2="6.4" y2="17.6"/><line x1="17.6" y1="6.4" x2="19.4" y2="4.6"/></svg>
+          </span>
+          <h3>Look After Yourself</h3>
+          <p>Beauty, hair and skincare guides.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5V20a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 20z"/><polyline points="9 21.5 9 13 15 13 15 21.5"/></svg>
+          </span>
+          <h3>Live More Simply</h3>
+          <p>Home, productivity and everyday lifestyle inspiration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WELLNESS ================= -->
+<section class="section section--white" id="wellness" data-img-theme="wellness" aria-labelledby="wellness-title">
+  <div class="container">
+    <div class="section-banner reveal">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1800&auto=format&fit=crop"
+           alt="Woman meditating peacefully in warm golden light, eyes closed and hands resting softly"
+           loading="lazy" decoding="async">
+      <div class="banner-content">
+        <p class="eyebrow on-dark">01 &nbsp;·&nbsp; Wellness</p>
+        <h2 class="banner-title" id="wellness-title">Wellness, Made Simple</h2>
+        <p class="banner-sub">Small habits can make a meaningful difference in how you feel every day.</p>
+      </div>
+    </div>
+    <p class="grid-head">Latest stories</p>
+    <div class="card-grid">
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=900&auto=format&fit=crop"
+               alt="Woman resting in a bright bedroom with soft white bedding and gentle morning light" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="w1">Why You Can Still Feel Tired After a Full Night’s Sleep</a></h3>
+          <p class="card-excerpt">Eight hours in bed doesn’t always mean eight hours of rest. Here’s what might be quietly draining your sleep quality.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=900&auto=format&fit=crop"
+               alt="A nourishing breakfast table with fresh fruit, yoghurt and coffee in soft daylight" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="w2">Simple Habits That Can Help You Feel More Energized</a></h3>
+          <p class="card-excerpt">Energy isn’t something you find — it’s something you build. Small daily habits that quietly add up.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?q=80&w=900&auto=format&fit=crop"
+               alt="Fresh, clear water being poured into an elegant glass" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="w3">Easy Ways to Stay Hydrated Throughout the Day</a></h3>
+          <p class="card-excerpt">Simple, gentle ways to make drinking water feel effortless throughout your day.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=900&auto=format&fit=crop"
+               alt="Woman enjoying a peaceful self-care moment wrapped in a soft white towel" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="w4">Simple Self-Care Ideas When You Feel Drained</a></h3>
+          <p class="card-excerpt">When you’re running on empty, self-care has to be small enough to actually happen.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEAUTY & SELF-CARE ================= -->
+<section class="section section--cream" id="beauty" data-img-theme="beauty" aria-labelledby="beauty-title">
+  <div class="container">
+    <div class="section-banner reveal">
+      <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1800&auto=format&fit=crop"
+           alt="Woman doing her skincare and makeup in front of a mirror in soft natural light" loading="lazy" decoding="async">
+      <div class="banner-content">
+        <p class="eyebrow on-dark">02 &nbsp;·&nbsp; Beauty</p>
+        <h2 class="banner-title" id="beauty-title">Beauty &amp; Self-Care</h2>
+        <p class="banner-sub">Simple routines that make taking care of yourself feel enjoyable, not complicated.</p>
+      </div>
+    </div>
+    <p class="grid-head">Beauty &amp; routines</p>
+    <div class="card-grid">
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=900&auto=format&fit=crop"
+               alt="Woman having her hair gently cared for at a bright salon" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="b1">How to Build a Simple Hair-Care Routine</a></h3>
+          <p class="card-excerpt">A short, patient routine built around your actual hair — not someone else’s.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?q=80&w=900&auto=format&fit=crop"
+               alt="Woman getting ready for her day in front of a bright bathroom mirror" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="b2">A 10-Minute Morning Beauty Routine</a></h3>
+          <p class="card-excerpt">A few well-chosen steps that make you feel like yourself before you leave the house.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=900&auto=format&fit=crop"
+               alt="Minimal skincare products arranged softly in warm light" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="b3">Simple Skincare Habits for Everyday Life</a></h3>
+          <p class="card-excerpt">Boring habits, repeated daily, beat ambitious routines you abandon by February.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=900&auto=format&fit=crop"
+               alt="A calm, softly lit bathroom with a bathtub prepared for a relaxing evening" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="b4">Self-Care Ideas for Busy Women</a></h3>
+          <p class="card-excerpt">Small refuges — fifteen-minute baths, slow hours and other quiet acts of care.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOME & DAILY LIFE ================= -->
+<section class="section" id="daily-life" data-img-theme="home" aria-labelledby="home-title">
+  <div class="container">
+    <div class="section-banner reveal">
+      <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1800&auto=format&fit=crop"
+           alt="A bright, organized and cozy living room bathed in warm afternoon light" loading="lazy" decoding="async">
+      <div class="banner-content">
+        <p class="eyebrow on-dark">03 &nbsp;·&nbsp; Home &amp; Daily Life</p>
+        <h2 class="banner-title" id="home-title">Make Everyday Life Easier</h2>
+        <p class="banner-sub">Cozy, realistic ideas for a home that feels calm at the end of every day.</p>
+      </div>
+    </div>
+    <p class="grid-head">Home &amp; living</p>
+    <div class="card-grid">
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=900&auto=format&fit=crop"
+               alt="Woman tidying a beautiful, plant-filled living room back to calm" loading="lazy" decoding="async">
+          <span class="card-chip">Home</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="h1">The 30-Minute Evening Reset</a></h3>
+          <p class="card-excerpt">Thirty gentle minutes that close today properly and make tomorrow morning lighter.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=900&auto=format&fit=crop"
+               alt="A bright, organized kitchen with everything neatly in its place" loading="lazy" decoding="async">
+          <span class="card-chip">Home</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="h2">How to Keep a Small Home Organized</a></h3>
+          <p class="card-excerpt">Smarter storage, honest rules and small daily habits for a calmer small space.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=900&auto=format&fit=crop"
+               alt="A fresh, clean bathroom with a round mirror and soft neutral tones" loading="lazy" decoding="async">
+          <span class="card-chip">Home</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="h3">Simple Weekly Cleaning Routine</a></h3>
+          <p class="card-excerpt">Thirty minutes a day, most days — the kind alternative to the weekend marathon.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=900&auto=format&fit=crop"
+               alt="A quiet morning coffee with latte art in soft sunlight" loading="lazy" decoding="async">
+          <span class="card-chip">Home</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="h4">How to Create a Calm Morning Routine</a></h3>
+          <p class="card-excerpt">A calm morning is mostly made the night before. Here’s how to build yours.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STYLE & SMART SHOPPING ================= -->
+<section class="section section--white" id="style" data-img-theme="style" aria-labelledby="style-title">
+  <div class="container">
+    <div class="section-banner reveal">
+      <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?q=80&w=1800&auto=format&fit=crop"
+           alt="A stylish woman choosing clothes from a curated rack in her bright bedroom" loading="lazy" decoding="async">
+      <div class="banner-content">
+        <p class="eyebrow on-dark">04 &nbsp;·&nbsp; Style</p>
+        <h2 class="banner-title" id="style-title">Style &amp; Smart Shopping</h2>
+        <p class="banner-sub">Simple guides to help you shop better, dress confidently and build a wardrobe that works for you.</p>
+      </div>
+    </div>
+    <p class="grid-head">Style notes</p>
+    <div class="card-grid">
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=900&auto=format&fit=crop"
+               alt="Everyday wardrobe pieces hanging neatly on a rail against a white wall" loading="lazy" decoding="async">
+          <span class="card-chip">Style</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="s1">How to Build an Everyday Wardrobe</a></h3>
+          <p class="card-excerpt">A small, honest collection of clothes that fit your actual life.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=900&auto=format&fit=crop"
+               alt="Neatly arranged clothing and accessories in warm neutral tones" loading="lazy" decoding="async">
+          <span class="card-chip">Style</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="s2">Wardrobe Essentials Every Woman Can Use</a></h3>
+          <p class="card-excerpt">The hard-working few that play well with everything else you own.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?q=80&w=900&auto=format&fit=crop"
+               alt="Close-up of soft natural fabric textures in beige and cream" loading="lazy" decoding="async">
+          <span class="card-chip">Style</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="s3">How to Choose the Right Fabric</a></h3>
+          <p class="card-excerpt">Two identical garments can live completely different lives. The difference is the fabric.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=900&auto=format&fit=crop"
+               alt="Woman carrying shopping bags after a thoughtful, unhurried shopping trip" loading="lazy" decoding="async">
+          <span class="card-chip">Style</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="s4">Smart Shopping Tips for Beauty &amp; Fashion</a></h3>
+          <p class="card-excerpt">Slowing down at exactly the moment you’re being encouraged to speed up.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTIVITY & LIFE ================= -->
+<section class="section section--cream" id="productivity" data-img-theme="productivity" aria-labelledby="productivity-title">
+  <div class="container">
+    <div class="section-banner reveal">
+      <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?q=80&w=1800&auto=format&fit=crop"
+           alt="Woman working on her laptop at a clean, bright home desk" loading="lazy" decoding="async">
+      <div class="banner-content">
+        <p class="eyebrow on-dark">05 &nbsp;·&nbsp; Productivity</p>
+        <h2 class="banner-title" id="productivity-title">Life &amp; Productivity</h2>
+        <p class="banner-sub">Gentle systems and small habits that help your days run smoothly — without running you.</p>
+      </div>
+    </div>
+    <p class="grid-head">Work &amp; planning</p>
+    <div class="card-grid">
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=900&auto=format&fit=crop"
+               alt="Woman writing her plans for the morning in a notebook at her desk" loading="lazy" decoding="async">
+          <span class="card-chip">Productivity</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="p1">How to Create a Morning Routine You Can Actually Follow</a></h3>
+          <p class="card-excerpt">Build the version you can keep on your worst day — not just on paper.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=900&auto=format&fit=crop"
+               alt="An open planner, pen and coffee on a calm workspace" loading="lazy" decoding="async">
+          <span class="card-chip">Productivity</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="p2">How to Stop Feeling Overwhelmed by Your To-Do List</a></h3>
+          <p class="card-excerpt">An overflowing list is a packing problem, not a productivity problem.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=900&auto=format&fit=crop"
+               alt="Hand writing a weekly plan with a fountain pen on crisp paper" loading="lazy" decoding="async">
+          <span class="card-chip">Productivity</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="p3">Simple Ways to Organize Your Week</a></h3>
+          <p class="card-excerpt">Twenty minutes once a week, gentle themes and protected white space.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+      <article class="article-card reveal">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=900&auto=format&fit=crop"
+               alt="Woman using her laptop and phone together to organize her day" loading="lazy" decoding="async">
+          <span class="card-chip">Productivity</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="p4">Digital Tools That Make Everyday Life Easier</a></h3>
+          <p class="card-excerpt">The right few tools, quietly doing their jobs, remove dozens of daily frictions.</p>
+          <span class="card-link">Read article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED GUIDE ================= -->
+<section class="featured" id="featured-guide" data-img-theme="wellness" aria-labelledby="featured-title">
+  <div class="container featured-grid">
+    <div class="featured-media reveal">
+      <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1200"
+           alt="Woman sitting peacefully near a large window with a journal and a cup of tea in soft natural light" loading="lazy" decoding="async">
+    </div>
+    <div class="featured-content reveal">
+      <p class="eyebrow rose">Featured Guide</p>
+      <h2 class="featured-title" id="featured-title">The Simple Weekly Reset Every Woman Needs</h2>
+      <p class="featured-excerpt">Forty-five quiet minutes on a Sunday evening can change how an entire week feels. A gentle, realistic practice you can begin tonight — for your home, your plans and yourself.</p>
+      <p class="featured-meta">7 min read &nbsp;·&nbsp; Updated January 2026</p>
+      <button class="btn btn-solid" data-article="featured">Read Full Guide</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FROM THE JOURNAL ================= -->
+<section class="section section--white" id="articles" data-img-theme="default" aria-labelledby="journal-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow centered">06 &nbsp;·&nbsp; The Journal</p>
+      <h2 id="journal-title">From the Journal</h2>
+      <p class="sec-sub">Longer reads and quiet favourites — honest guides and gentle ideas for everyday life.</p>
+    </div>
+    <div class="filter-bar" role="group" aria-label="Filter articles by category">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Wellness">Wellness</button>
+      <button class="filter-btn" data-filter="Beauty">Beauty</button>
+      <button class="filter-btn" data-filter="Home">Home</button>
+      <button class="filter-btn" data-filter="Style">Style</button>
+      <button class="filter-btn" data-filter="Productivity">Productivity</button>
+    </div>
+    <div class="journal-grid" id="journalGrid">
+
+      <article class="article-card reveal" data-category="Wellness" data-img-theme="wellness">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop" alt="Colourful, nourishing salad bowls on a wooden table" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j1">A Gentle Guide to Eating Well Without Rules</a></h3>
+          <p class="card-excerpt">No rules, no guilt, no complicated plans — just a calm, realistic way to feel good about food again.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Wellness" data-img-theme="wellness">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=900&auto=format&fit=crop" alt="Woman practicing a gentle yoga stretch at home" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j2">A 10-Minute Evening Stretch to Unwind</a></h3>
+          <p class="card-excerpt">Ten slow minutes before bed that tell the nervous system the day is over.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Wellness" data-img-theme="wellness">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=900&auto=format&fit=crop" alt="A slow, beautiful Sunday breakfast plate with warm toast and berries" loading="lazy" decoding="async">
+          <span class="card-chip">Wellness</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j3">Slow Sunday Breakfasts Worth Waking Up For</a></h3>
+          <p class="card-excerpt">Fifteen unhurried minutes, a real plate and no deadline — the week’s kindest meal.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Beauty" data-img-theme="beauty">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=900&auto=format&fit=crop" alt="Minimal skincare bottles arranged in soft pink light" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j4">The Order of Your Skincare Steps Actually Matters</a></h3>
+          <p class="card-excerpt">Thinnest to thickest. The one rule that lets every product do its job.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Beauty" data-img-theme="beauty">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=900&auto=format&fit=crop" alt="Spa stones with a soft flower in warm, candle-lit tones" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j5">How to Care for Dry Hands This Winter</a></h3>
+          <p class="card-excerpt">Lukewarm water, damp skin and one overnight trick that undoes a week of winter.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Beauty" data-img-theme="beauty">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=900&auto=format&fit=crop" alt="A hand holding a simple cream jar in soft, warm light" loading="lazy" decoding="async">
+          <span class="card-chip">Beauty</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j6">What ‘Gentle Skincare’ Really Means</a></h3>
+          <p class="card-excerpt">It’s how you treat skin — not just what’s printed on the bottle.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Home" data-img-theme="home">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?q=80&w=900&auto=format&fit=crop" alt="Small green plants growing in glass jars on a bright windowsill" loading="lazy" decoding="async">
+          <span class="card-chip">Home</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j7">Five Low-Light Plants for a Calmer Home</a></h3>
+          <p class="card-excerpt">You don’t need a sunroom — just forgiving greens and slightly restrained watering.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Home" data-img-theme="home">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop" alt="A bright white bedroom with crisp, freshly made bedding" loading="lazy" decoding="async">
+          <span class="card-chip">Home</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j8">Why Making Your Bed Changes Your Morning</a></h3>
+          <p class="card-excerpt">Ninety seconds that quietly change the room, the morning and the evening.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Style" data-img-theme="style">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=900&auto=format&fit=crop" alt="Woman in an elegant warm-toned outfit, photographed in soft studio light" loading="lazy" decoding="async">
+          <span class="card-chip">Style</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j9">Five Questions to Help You Find Your Personal Style</a></h3>
+          <p class="card-excerpt">Your style is a pattern written by your real life. Five questions to read it.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Style" data-img-theme="style">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop" alt="A bright, calm boutique with clothes displayed on neat rails" loading="lazy" decoding="async">
+          <span class="card-chip">Style</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j10">How to Shop Less, But Better</a></h3>
+          <p class="card-excerpt">The most stylish wardrobes are rarely the fullest — they’re the ones bought slowly.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Productivity" data-img-theme="productivity">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=900&auto=format&fit=crop" alt="A calm workspace with laptop, notebook and coffee ready for planning" loading="lazy" decoding="async">
+          <span class="card-chip">Productivity</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j11">The Sunday Habit That Sets Up a Calmer Week</a></h3>
+          <p class="card-excerpt">Twenty quiet minutes on Sunday evening can change the texture of the whole week.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <article class="article-card reveal" data-category="Productivity" data-img-theme="productivity">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=900&auto=format&fit=crop" alt="Hands resting on a laptop as the workday gently closes" loading="lazy" decoding="async">
+          <span class="card-chip">Productivity</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><a class="card-link-cover" href="#" data-article="j12">How to End Your Workday on Time (and on Purpose)</a></h3>
+          <p class="card-excerpt">The workday rarely ends itself. A closing ritual, and an invented commute.</p>
+          <span class="card-link">Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter" id="newsletter" data-img-theme="productivity" aria-labelledby="newsletter-title">
+  <img class="newsletter-bg" src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?q=80&w=1800&auto=format&fit=crop"
+       alt="" aria-hidden="true" loading="lazy" decoding="async">
+  <div class="newsletter-scrim" aria-hidden="true"></div>
+  <div class="container newsletter-inner">
+    <p class="eyebrow on-dark centered">The Sunday Letter</p>
+    <h2 id="newsletter-title">A little inspiration for your inbox.</h2>
+    <p>Get practical wellness, beauty and lifestyle ideas delivered occasionally — no clutter, just useful things.</p>
+    <form class="newsletter-form" id="newsletterForm" novalidate>
+      <label class="visually-hidden" for="emailInput">Your email address</label>
+      <input type="email" id="emailInput" name="email" placeholder="Your email address" autocomplete="email" required>
+      <button type="submit" class="btn btn-ivory">Subscribe</button>
+    </form>
+    <p class="newsletter-error" id="newsletterError" hidden>Please enter a valid email address.</p>
+    <div class="newsletter-success" id="newsletterSuccess" hidden>
+      <span class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </span>
+      <p>Welcome to Her Daily — your first letter is on its way.</p>
+    </div>
+    <p class="newsletter-note" id="newsletterNote">Occasional emails. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about" data-img-theme="default" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-content reveal">
+      <p class="eyebrow">About Her Daily</p>
+      <h2 id="about-title">Why Her Daily?</h2>
+      <p>Her Daily began with a simple observation: most of the advice aimed at women is either impossibly perfect or endlessly complicated — glossy routines that assume unlimited time, budgets and energy. Real life is softer and messier than that, and it deserves better information.</p>
+      <p>So we write practical guides instead: small wellness habits you can keep on a tired Tuesday, beauty routines that fit into ten minutes, homes organised in gentle half-hours, wardrobes built slowly and kindly, and plans that leave room to breathe. Everything here is realistic, warm and honest — no rules, no pressure, no perfection required.</p>
+      <blockquote class="about-quote">We’re not here to add more to your list. We’re here to make the list feel lighter.</blockquote>
+      <p class="about-sign">— The editors of Her Daily</p>
+    </div>
+    <div class="about-media reveal">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop"
+           alt="A woman smiling softly in warm natural light in her everyday surroundings" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">HER DAILY</p>
+        <p class="footer-tag">Simple ideas for better everyday living.</p>
+        <div class="social-row">
+          <a href="#" data-social aria-label="Her Daily on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" data-social aria-label="Her Daily on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" data-social aria-label="Her Daily on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.92 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="#" data-social aria-label="Her Daily on Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Footer — sections">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#wellness">Wellness</a></li>
+          <li><a href="#beauty">Beauty</a></li>
+          <li><a href="#daily-life">Daily Life</a></li>
+          <li><a href="#style">Style</a></li>
+          <li><a href="#productivity">Productivity</a></li>
+          <li><a href="#articles">Articles</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Footer — company">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" data-article="contact">Contact</a></li>
+          <li><a href="#" data-article="disclaimer">Disclaimer</a></li>
+          <li><a href="#" data-article="privacy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Her Daily. All rights reserved.</p>
+      <p>Made with care, coffee &amp; quiet mornings.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- back to top -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- ================= ARTICLE MODAL ================= -->
+<div class="modal" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <article class="modal-panel" data-img-theme="default">
+    <button class="icon-btn modal-close" id="modalClose" aria-label="Close article">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll" id="modalScroll">
+      <figure class="modal-figure">
+        <img id="modalImage" alt="">
+      </figure>
+      <div class="modal-content">
+        <div class="modal-meta">
+          <span class="cat-chip" id="modalCategory"></span>
+          <span class="modal-meta-text" id="modalMeta"></span>
+        </div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-dek" id="modalDek"></p>
+        <div class="article-body" id="modalBody"></div>
+        <p class="modal-author" id="modalAuthor"></p>
+        <div class="modal-related">
+          <h3 class="related-title">You might also like</h3>
+          <div class="related-grid" id="modalRelated"></div>
+        </div>
+        <a class="modal-return" href="#articles" data-close-modal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="20" y1="12" x2="4" y2="12"/><polyline points="11 5 4 12 11 19"/></svg>
+          Back to all stories
+        </a>
+      </div>
+    </div>
+  </article>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  const $  = s => document.querySelector(s);
+  const $$ = s => Array.from(document.querySelectorAll(s));
+
+  /* ================= IMAGE HELPERS & DATA ================= */
+  const U  = (id, w) => "https://images.unsplash.com/" + id + "?q=80&w=" + w + "&auto=format&fit=crop";
+  const PX = (id, w) => "https://images.pexels.com/photos/" + id + "/pexels-photo-" + id + ".jpeg?auto=compress&cs=tinysrgb&w=" + w;
+
+  /* Full article library — bodies support:
+     "## " subheading  ·  "> " pull-quote  ·  plain paragraphs */
+  const ARTICLES = {
+
+    featured: { category:"Wellness", title:"The Simple Weekly Reset Every Woman Needs", author:"Nora Lindqvist",
+      date:"January 12, 2026", readTime:"7 min read",
+      excerpt:"Forty-five quiet minutes on a Sunday evening can change how an entire week feels. A gentle, realistic practice you can begin tonight.",
+      image:PX(774909,1200), imageLg:PX(774909,1400),
+      imageAlt:"Woman sitting peacefully near a large window with a journal and a cup of tea in soft natural light",
+      body:[
+        "There is a particular kind of tiredness that arrives on Sunday evening — not the tiredness of a busy day, but the quiet dread of an unprepared week. Dishes from the weekend, a laundry basket that never quite emptied, a calendar you haven’t looked at since Thursday. The week ahead feels heavy before it has even begun.",
+        "## The idea is beautifully simple",
+        "The weekly reset is not a deep clean, and it is not a productivity system. It is forty-five unhurried minutes, once a week, that buy back your peace for the next seven days. Light a candle, put on something soft to wear, and move through three small acts — space, plans, and yourself.",
+        "## First, reset your space (twenty minutes)",
+        "Work in one direction around your home rather than bouncing between rooms. Reset the kitchen — dishes done or soaking, counters wiped, tomorrow’s breakfast in sight. Gather everything that has wandered and return it. Wipe the three surfaces you actually use. Put the living room back to zero. This is not about cleaning everything; it is about removing the four or five things that will otherwise nag at you all week.",
+        "## Then, reset your plans (ten minutes)",
+        "Sit down with your calendar and a single sheet of paper. Write down everything you can see coming. Choose the three things that genuinely matter this week. Let the rest become a gentle “later list” on the same page — not deleted, just honestly parked. Ten minutes of seeing the week clearly removes most of its ambient dread.",
+        "> A reset is not about doing more. It is about beginning again, gently.",
+        "## Finally, reset yourself (fifteen minutes)",
+        "Lay out tomorrow’s clothes. Put your keys where you will actually find them. Do one small thing that future-you will thank present-you for — filling the water bottle, prepping lunch, writing the first sentence of the difficult email. Then close the day properly: a warm shower, tea, an early night. You have done enough.",
+        "## Make it yours",
+        "Some weeks the full forty-five minutes will be impossible, and that is fine. Even ten minutes — a sink at zero and one honest look at your calendar — is enough to change how Monday morning feels. The reset is not another standard to meet. It is a small kindness you give to your own week, and kindnesses, repeated, become a life."
+      ]},
+
+    w1: { category:"Wellness", title:"Why You Can Still Feel Tired After a Full Night’s Sleep", author:"Amelia Byrne",
+      date:"January 8, 2026", readTime:"6 min read",
+      excerpt:"Eight hours in bed doesn’t always mean eight hours of rest. Here’s what might be quietly draining your sleep quality.",
+      image:U("photo-1515372039744-b8f02a3ae446",900), imageLg:U("photo-1515372039744-b8f02a3ae446",1400),
+      imageAlt:"Woman resting in a bright bedroom with soft white bedding and gentle morning light",
+      body:[
+        "You did everything right. You were in bed by ten, you skipped the late coffee, and you even left your phone in the kitchen. And yet you woke up feeling as though you had barely slept at all. If this sounds familiar, the problem is usually not how long you slept — it is how well.",
+        "## Sleep is about quality, not just hours",
+        "Sleep moves in cycles of roughly ninety minutes, drifting through light, deep and dream stages. Waking mid-cycle — especially out of deep sleep — can leave you groggy even after a full night, while waking naturally at the end of a cycle can feel surprisingly refreshing. The goal is not perfection; it is giving your body enough uninterrupted cycles to do its quiet overnight work.",
+        "## The quiet things that steal rest",
+        "Late screens, a room that is too warm, alcohol in the evening, or a mattress that has quietly passed its best years all fragment sleep without you noticing. So do unspoken worries — the meeting, the unanswered message — that the mind chews on at three in the morning.",
+        "## What actually helps",
+        "Keep a consistent wake time, even on weekends. Let natural light reach your eyes early in the day. Keep the bedroom cool and slightly boring. And if a racing mind is the issue, keep a small notebook by the bed and write tomorrow’s top three worries down before lights-out — the page can hold them overnight so you don’t have to.",
+        "If deep tiredness lasts for weeks despite good habits, it is worth speaking with a doctor. Rest is not a luxury; it is maintenance — and you deserve to have it work."
+      ]},
+
+    w2: { category:"Wellness", title:"Simple Habits That Can Help You Feel More Energized", author:"Sofia Marchetti",
+      date:"January 2, 2026", readTime:"5 min read",
+      excerpt:"Energy isn’t something you find — it’s something you build. Small daily habits that quietly add up.",
+      image:U("photo-1493770348161-369560ae357d",900), imageLg:U("photo-1493770348161-369560ae357d",1400),
+      imageAlt:"A nourishing breakfast table with fresh fruit, yoghurt and coffee in soft daylight",
+      body:[
+        "Energy is less something you find and more something you build. The good news: the habits that build it are almost embarrassingly small — and they compound quickly.",
+        "## Light first, coffee second",
+        "Get daylight into your eyes within the first hour of waking — a window seat, a short walk, even the balcony. Morning light sets your body clock far more reliably than caffeine, which then works better when you do have it.",
+        "## Movement snacks",
+        "You do not need a training plan. Two minutes of stretching while the kettle boils, a ten-minute walk after lunch, taking the stairs — movement in small doses tells your body it is needed, and the body answers with energy.",
+        "## Protect the afternoon dip",
+        "The post-lunch slump is biology, not weakness. Instead of fighting it with a third coffee, work with it: a lighter lunch, a short walk, five minutes of daylight, or even a ten-minute rest with your eyes closed. And guard your evenings — a hard stop on work and screens gives tomorrow’s energy a fair start.",
+        "Finally, watch the basics: water, real meals, and one thing to look forward to each day. Feeling energised is often less about doing more, and more about stopping the slow drain."
+      ]},
+
+    w3: { category:"Wellness", title:"Easy Ways to Stay Hydrated Throughout the Day", author:"June Okafor",
+      date:"December 28, 2025", readTime:"4 min read",
+      excerpt:"Simple, gentle ways to make drinking water feel effortless throughout your day.",
+      image:U("photo-1548839140-29a749e1cf4d",900), imageLg:U("photo-1548839140-29a749e1cf4d",1400),
+      imageAlt:"Fresh, clear water being poured into an elegant glass",
+      body:[
+        "Most of us know we should drink more water. The trick is not knowledge — it is design. Make water easier to reach than the things that crowd it out.",
+        "## Build it into the day you already have",
+        "A glass first thing in the morning, before coffee. A filled bottle on your desk — visible, open, within reach. A glass at every meal. Tie each one to something you already do without thinking, and hydration stops being a task and becomes a rhythm.",
+        "## It doesn’t have to be plain",
+        "Herbal teas count. Water with lemon counts. Sparkling water counts. Foods count too — cucumbers, oranges, soups and smoothies all quietly add up. If you dislike plain water, stop forcing it and simply make it slightly interesting.",
+        "## Small signs to watch",
+        "Fatigue, headaches and unusually dry skin are often mild dehydration wearing a disguise. If your afternoons feel heavier than they should, try a week of genuinely steady water intake before assuming anything else is wrong.",
+        "Aim for steady sips across the day rather than litres at once — your body absorbs gentleness far better than floods."
+      ]},
+
+    w4: { category:"Wellness", title:"Simple Self-Care Ideas When You Feel Drained", author:"Clara Beaumont",
+      date:"December 20, 2025", readTime:"5 min read",
+      excerpt:"When you’re running on empty, self-care has to be small enough to actually happen.",
+      image:U("photo-1544161515-4ab6ce6db874",900), imageLg:U("photo-1544161515-4ab6ce6db874",1400),
+      imageAlt:"Woman enjoying a peaceful self-care moment wrapped in a soft white towel",
+      body:[
+        "When you are truly drained, self-care that requires effort becomes one more demand. The kindest routines are the ones you can keep on your worst day.",
+        "## Lower the bar, on purpose",
+        "A good self-care day when you are depleted might be: shower, clean pyjamas, water, and an early night. That is not giving up — that is maintenance. Do the smallest version of things: one window opened, one meal that is real food, one message sent to someone safe.",
+        "## Micro-resets that take five minutes",
+        "Step outside and take ten slow breaths. Run warm water over your wrists. Lie on the floor with a weighted blanket, or even a heavy coat. Play one song that always reaches you. These seem too small to matter, but they speak the nervous system’s language.",
+        "## Rest without earning it",
+        "You do not need to be productive to deserve rest, and rest does not have to be scheduled at the end of a finished list. Sometimes the most radical act of self-care is closing the laptop at a reasonable hour — unfinished — and trusting tomorrow with the rest.",
+        "If the drained feeling stays for weeks, treat it as information, not weakness — and let a professional take a kind, careful look."
+      ]},
+
+    b1: { category:"Beauty", title:"How to Build a Simple Hair-Care Routine", author:"Mia Sorensen",
+      date:"January 10, 2026", readTime:"6 min read",
+      excerpt:"A short, patient routine built around your actual hair — not someone else’s.",
+      image:U("photo-1560066984-138dadb4c035",900), imageLg:U("photo-1560066984-138dadb4c035",1400),
+      imageAlt:"Woman having her hair gently cared for at a bright salon",
+      body:[
+        "Beautiful hair rarely comes from a shelf full of products. It comes from a short routine repeated patiently — one built around your actual hair, not someone else’s.",
+        "## Start with your hair, honestly",
+        "Is it fine or thick? Straight, wavy, curly or coily? Oily at the roots, dry at the ends? Your answers decide almost everything: how often to wash, what to condition, and which products are worth owning at all.",
+        "## A routine that fits in three steps",
+        "Wash only as often as your scalp truly needs — many women wash less than they think they must. Condition the lengths and ends, not the roots. Once a week, add a mask or a few minutes of scalp massage with warm oil. That is the whole routine.",
+        "## Protect what you have",
+        "Heat is the fastest way to undo a year of patience: use a heat protectant, keep tools at medium rather than maximum, and let hair air-dry when you can. A silk or satin pillowcase reduces overnight friction, and a trim every eight to twelve weeks keeps ends from splitting up the strand.",
+        "The goal is not perfect hair. It is hair that behaves, feels healthy, and takes you five minutes on a normal morning."
+      ]},
+
+    b2: { category:"Beauty", title:"A 10-Minute Morning Beauty Routine", author:"Amelia Byrne",
+      date:"January 5, 2026", readTime:"4 min read",
+      excerpt:"A few well-chosen steps that make you feel like yourself before you leave the house.",
+      image:U("photo-1596178067639-5c6e68aea6dc",900), imageLg:U("photo-1596178067639-5c6e68aea6dc",1400),
+      imageAlt:"Woman getting ready for her day in front of a bright bathroom mirror",
+      body:[
+        "A beautiful morning routine is not about doing more — it is about a few well-chosen steps that make you feel like yourself before you walk out the door.",
+        "## The five-minute skin base",
+        "Splash with lukewarm water or a gentle cleanser, press in a light moisturiser while skin is still damp, and finish with SPF — the one step your sixty-year-old self will thank you for. Thirty seconds each; no more.",
+        "## The five-minute finish",
+        "Brush the brows up and set them — brows quietly frame everything. One coat of mascara on the upper lashes. A cream blush dotted on the cheeks and tapped in with fingers. A tinted lip balm, and you are done. On slower mornings, the blush and balm alone will carry you.",
+        "## Keep the kit small",
+        "One bag, eight products at most. A small kit is faster, kinder to your budget, and easier to keep tidy — and it makes getting ready feel like a ritual rather than a rush.",
+        "Ten minutes is not a limit on how good you can look. It is a boundary that protects how good the morning feels."
+      ]},
+
+    b3: { category:"Beauty", title:"Simple Skincare Habits for Everyday Life", author:"Nora Lindqvist",
+      date:"December 30, 2025", readTime:"5 min read",
+      excerpt:"Boring habits, repeated daily, beat ambitious routines you abandon by February.",
+      image:U("photo-1556228453-efd6c1ff04f6",900), imageLg:U("photo-1556228453-efd6c1ff04f6",1400),
+      imageAlt:"Minimal skincare products arranged softly in warm light",
+      body:[
+        "Good skin is less about rare ingredients and more about boring habits repeated daily. A consistent simple routine beats an ambitious one you abandon by February.",
+        "## The three-step minimum",
+        "A gentle cleanser at night, a moisturiser suited to your skin, and SPF in the morning. Everything else — serums, masks, treatments — is optional decoration on a foundation that works.",
+        "## A few quiet habits that matter more than products",
+        "Change your pillowcase twice a week. Clean your phone screen. Stop touching your face through the workday. Take your makeup off before bed — not perfectly, just before. None of these are glamorous, and all of them show up in your skin within weeks.",
+        "## Be gentle before you are advanced",
+        "Introduce one new product at a time, and give it a few weeks before judging. Patch-test along the jaw. If your skin stings, itches or stays red, that is a no, not a push-through. And whatever an advertisement implies, more steps and stronger actives are not automatically better — skin likes calm, and it repays it."
+      ]},
+
+    b4: { category:"Beauty", title:"Self-Care Ideas for Busy Women", author:"Sofia Marchetti",
+      date:"December 22, 2025", readTime:"5 min read",
+      excerpt:"Small refuges — fifteen-minute baths, slow hours and other quiet acts of care.",
+      image:U("photo-1541643600914-78b084683601",900), imageLg:U("photo-1541643600914-78b084683601",1400),
+      imageAlt:"A calm, softly lit bathroom with a bathtub prepared for a relaxing evening",
+      body:[
+        "Self-care is not another appointment to squeeze in. At its best, it is a set of small refuges scattered through a full life.",
+        "## The fifteen-minute bath",
+        "Fifteen minutes of warm water is a complete reset: lock the door, add salts or nothing at all, and leave the phone in another room. Follow with your richest body cream and the oldest, softest pyjamas you own.",
+        "## The slow hour",
+        "Claim one hour a week — Sunday evening works beautifully — for something with no output: a novel, a slow skincare ritual, a playlist with the lights low. Guard it like a meeting with the most important person in your calendar, because that is exactly what it is.",
+        "## Care that costs nothing",
+        "A walk taken without a destination. Tea drunk while sitting down, from an actual cup. Calling the friend who makes you laugh. Going to bed one hour early with the lights already dimmed. The cheapest forms of self-care are often the ones you actually keep.",
+        "You cannot pour from an empty cup — but you can, it turns out, refill it in fifteen quiet minutes."
+      ]},
+
+    h1: { category:"Home", title:"The 30-Minute Evening Reset", author:"Clara Beaumont",
+      date:"January 9, 2026", readTime:"4 min read",
+      excerpt:"Thirty gentle minutes that close today properly and make tomorrow morning lighter.",
+      image:U("photo-1522708323590-d24dbb6b0267",900), imageLg:U("photo-1522708323590-d24dbb6b0267",1400),
+      imageAlt:"A tidy, plant-filled living room returned to calm after an evening reset",
+      body:[
+        "The way your home looks at nine in the evening is the way tomorrow morning greets you. The evening reset is a small, repeatable loop that closes today gently — and sets up tomorrow to feel lighter.",
+        "## Set the stage",
+        "Set a timer for thirty minutes, put on music you love, and pour yourself something warm. This is not a punishment clean; it is a closing ritual.",
+        "## The five loops",
+        "Minutes one to ten, the kitchen: dishes done or soaking, counters wiped, tomorrow’s breakfast in sight. Minutes ten to eighteen, the living room: everything back to its home, one surface cleared completely. Minutes eighteen to twenty-two, clothes: hung, folded, or in the basket — not the chair. Minutes twenty-two to twenty-six, tomorrow: keys, bag, and one note of what matters. The last minutes are yours: water the plant, close the laptop, dim the lights.",
+        "> You are not cleaning the house. You are closing the day with intention.",
+        "## Why it works",
+        "Thirty minutes feels possible even on tired days, and possible is what makes it repeatable. A week of small resets leaves a home that is never more than one evening away from calm — and a morning self that wakes up grateful."
+      ]},
+
+    h2: { category:"Home", title:"How to Keep a Small Home Organized", author:"June Okafor",
+      date:"January 3, 2026", readTime:"6 min read",
+      excerpt:"Smarter storage, honest rules and small daily habits for a calmer small space.",
+      image:U("photo-1556911220-e15b29be8c8f",900), imageLg:U("photo-1556911220-e15b29be8c8f",1400),
+      imageAlt:"A bright, organized kitchen with everything neatly in its place",
+      body:[
+        "A small home is not a smaller life — it just asks for smarter storage and a little more honesty about what earns its place.",
+        "## Use the walls",
+        "In small homes, height is your largest closet: shelves above desks, hooks behind doors, a slim bookcase instead of a wide one, risers inside cabinets. When storage goes vertical, floors stay open and rooms feel bigger.",
+        "## Everything gets a zone",
+        "Assign every category a single home: keys by the door, chargers in one basket, important papers in one folder. Half of “messy” is simply things without addresses. When everything has somewhere to go, tidying becomes returning rather than deciding.",
+        "## The honest rules",
+        "One in, one out. Closed storage for the visually noisy, open storage for the beautiful few. A ten-minute nightly sweep before bed — and once a season, a quiet edit of what is no longer earning its space.",
+        "A small home, lightly kept, can feel more luxurious than a large one full of things you are maintaining instead of living with."
+      ]},
+
+    h3: { category:"Home", title:"Simple Weekly Cleaning Routine", author:"Mia Sorensen",
+      date:"December 27, 2025", readTime:"5 min read",
+      excerpt:"Thirty minutes a day, most days — the kind alternative to the weekend marathon.",
+      image:U("photo-1584622650111-993a426fbf0a",900), imageLg:U("photo-1584622650111-993a426fbf0a",1400),
+      imageAlt:"A fresh, clean bathroom with a round mirror and soft neutral tones",
+      body:[
+        "The weekend-cleaning marathon is the first thing to go on a busy week — and its absence is how homes slowly drift. The alternative is smaller and much kinder: thirty minutes a day, most days.",
+        "## The rhythm",
+        "Monday, bathrooms — twenty minutes, done. Tuesday, floors in the living areas. Wednesday, kitchen deep wipe: counters, sink, stove, fridge exterior. Thursday, bedrooms and laundry put away. Friday, catch-up or rest. Saturday, sheets and towels. Sunday, off — or the evening reset instead.",
+        "## Make it lighter",
+        "Keep a small caddy with everything you need under the sink, so nothing requires hunting. Clean top to bottom in each room, one product at a time. And set the same playlist every time — rituals run on cues, and yours will learn this one fast.",
+        "A home kept in thirty-minute pieces never needs saving, and the weekends belong to living again."
+      ]},
+
+    h4: { category:"Home", title:"How to Create a Calm Morning Routine", author:"Amelia Byrne",
+      date:"December 18, 2025", readTime:"5 min read",
+      excerpt:"A calm morning is mostly made the night before. Here’s how to build yours.",
+      image:U("photo-1495474472287-4d71bcdd2085",900), imageLg:U("photo-1495474472287-4d71bcdd2085",1400),
+      imageAlt:"A quiet morning coffee with latte art in soft sunlight",
+      body:[
+        "A calm morning is mostly made the night before. What it asks of you in the moment is small: a little light, a little water, and a slower first hour.",
+        "## Prepare the night before",
+        "Choose tomorrow’s clothes, set the breakfast table or the coffee machine, and put your phone to charge outside the bedroom. Every decision you remove from the morning returns a little peace to it.",
+        "## The first thirty minutes",
+        "Open the curtains before anything else. Drink a glass of water before the first coffee. And keep the phone face-down and untouched for the first half hour — the world can wait, and you will meet it calmer.",
+        "## Keep it honest",
+        "A calm morning is not a five a.m. club. It is fifteen unhurried minutes of coffee in actual silence, or ten minutes of stretching by the window, or simply eating breakfast sitting down. Build the version you can keep on a hard day — that is the one that will hold on the good ones too."
+      ]},
+
+    s1: { category:"Style", title:"How to Build an Everyday Wardrobe", author:"Nora Lindqvist",
+      date:"January 11, 2026", readTime:"7 min read",
+      excerpt:"A small, honest collection of clothes that fit your actual life.",
+      image:U("photo-1445205170230-053b83016050",900), imageLg:U("photo-1445205170230-053b83016050",1400),
+      imageAlt:"Everyday wardrobe pieces hanging neatly on a rail against a white wall",
+      body:[
+        "An everyday wardrobe is not a capsule wardrobe — it is a small, honest collection of clothes that fit your actual life: your weather, your work, your comfort, your mornings.",
+        "## Start with a clear-out",
+        "Take everything out and sort it into three honest piles: wear often, wear sometimes, never wear. Study the first pile — it holds the answer to what your real life needs. The pieces you love most will share a palette, a silhouette, a feeling. Build from there.",
+        "## Choose a palette, then trust it",
+        "Two or three neutral base colours — ivory, camel, charcoal, navy, olive — plus one or two accents you genuinely love. When colours agree with each other, everything mixes, and mornings become simple: any top, any bottom, done.",
+        "## Buy fewer, better, slower",
+        "Fill gaps deliberately: write the list — fine knit, flat shoes, a coat that closes properly — and buy against it, one piece at a time. Choose cut and fabric over trend; mend and tailor what you love. A wardrobe built this way takes a season or two — and then quietly serves for years."
+      ]},
+
+    s2: { category:"Style", title:"Wardrobe Essentials Every Woman Can Use", author:"Clara Beaumont",
+      date:"January 4, 2026", readTime:"6 min read",
+      excerpt:"The hard-working few that play well with everything else you own.",
+      image:U("photo-1434389677669-e08b4cac3105",900), imageLg:U("photo-1434389677669-e08b4cac3105",1400),
+      imageAlt:"Neatly arranged clothing and accessories in warm neutral tones",
+      body:[
+        "Essentials are not a universal list — but a few pieces have earned their place in almost every wardrobe, because they work with everything else you own.",
+        "## The hard-working few",
+        "A crisp white shirt that fits through the shoulders — office with trousers, weekend with jeans. Straight-leg jeans in a true mid-blue. A tailored blazer that instantly organises any outfit. A fine knit in your best neutral. Flat shoes you can actually walk in. And a bag that holds your real day.",
+        "## Why they work",
+        "Each of these plays well with statement pieces and rescues difficult ones. They are the supporting cast that makes everything else shine — and when the base layer is right, dressing takes minutes instead of mornings.",
+        "## Choose yours, not the internet’s",
+        "Test each “essential” against your own calendar: if a blazer never fits your real week, it is not essential for you. The goal is a wardrobe where the boring parts — the reliable, comfortable, quietly perfect parts — are the strongest ones."
+      ]},
+
+    s3: { category:"Style", title:"How to Choose the Right Fabric", author:"Sofia Marchetti",
+      date:"December 29, 2025", readTime:"6 min read",
+      excerpt:"Two identical garments can live completely different lives. The difference is the fabric.",
+      image:U("photo-1544966503-7cc5ac882d5f",900), imageLg:U("photo-1544966503-7cc5ac882d5f",1400),
+      imageAlt:"Close-up of soft natural fabric textures in beige and cream",
+      body:[
+        "Two garments can look identical on a hanger and live completely different lives. The difference, almost always, is the fabric.",
+        "## Learn to read labels",
+        "A few minutes spent understanding fibres changes how you shop forever. Natural fibres — cotton, linen, wool, silk — generally breathe, age gracefully and feel better against skin. Synthetics add stretch, structure and affordability, and at their best they blend with naturals rather than replace them.",
+        "## The hand test",
+        "Before buying, touch and hold the fabric. Does it drape smoothly or stiffly? Does it wrinkle in your gentle fist in a way you can accept? Hold it up to the light — loose weaves wear out fast. Quality announces itself quietly in the hand, long before it announces itself in the wash.",
+        "## Check the care label, honestly",
+        "The perfect fabric you will never actually care for is not the perfect fabric for you. Dry-clean-only silks, hand-wash-only linens — beautiful, but know yourself. The most luxurious fabric in a real life is often the beautiful one you can simply wash."
+      ]},
+
+    s4: { category:"Style", title:"Smart Shopping Tips for Beauty & Fashion", author:"June Okafor",
+      date:"December 21, 2025", readTime:"5 min read",
+      excerpt:"Slowing down at exactly the moment you’re being encouraged to speed up.",
+      image:U("photo-1483985988355-763728e1935b",900), imageLg:U("photo-1483985988355-763728e1935b",1400),
+      imageAlt:"Woman carrying shopping bags after a thoughtful, unhurried shopping trip",
+      body:[
+        "Shopping well is a skill — and like most skills, it is mostly about slowing down at exactly the moment you are being encouraged to speed up.",
+        "## The pause that pays",
+        "Give yourself the forty-eight-hour rule: anything unplanned goes on a list, not in a basket. Most wants fade by tomorrow — and the ones that survive were probably real. In the sale frenzy, ask the only honest question: would I want this at full price?",
+        "## Shop your own closet first",
+        "Before hunting the missing piece, check whether you already own it — or something that plays its role. Keep a running gaps list in your notes app, so shopping has a brief to fulfil rather than wandering in to see what calls to you.",
+        "## Beauty buys, tested",
+        "With skincare and cosmetics, the ingredient list and honest reviews outrank the packaging. Buy minis where you can, introduce one product at a time, and mind the return window — reputable brands take products back. Cost-per-wear, cost-per-use: the maths of buying well is always the same."
+      ]},
+
+    p1: { category:"Productivity", title:"How to Create a Morning Routine You Can Actually Follow", author:"Mia Sorensen",
+      date:"January 7, 2026", readTime:"5 min read",
+      excerpt:"Build the version you can keep on your worst day — not just on paper.",
+      image:U("photo-1434030216411-0b793f4b4173",900), imageLg:U("photo-1434030216411-0b793f4b4173",1400),
+      imageAlt:"Woman writing her plans for the morning in a notebook at her desk",
+      body:[
+        "Most morning routines fail for one simple reason: they were designed for a person with more time, more energy and fewer mornings like yours. Build for the real one.",
+        "## Start almost embarrassingly small",
+        "Choose two anchors, not ten habits — for example, a glass of water and five minutes of stretching. A routine you keep on your worst day is worth infinitely more than one that only works in theory.",
+        "## Anchor to what already exists",
+        "Habit-stacking works because it borrows momentum: after I turn off the alarm, after I start the coffee, after I close the front door. Attach the new behaviour to something already automatic and it stops requiring willpower.",
+        "## Design the night before",
+        "Set out what you need, write tomorrow’s one important thing, and decide your wake time with your actual life in mind. Mornings are won the evening before — every single time.",
+        "> The best routine is the one that survives the mornings when everything goes wrong.",
+        "## Review it monthly",
+        "Keep what has become automatic, adjust what you keep avoiding, and let the routine grow slowly. You are not building a schedule; you are building a shape your days can relax into."
+      ]},
+
+    p2: { category:"Productivity", title:"How to Stop Feeling Overwhelmed by Your To-Do List", author:"Amelia Byrne",
+      date:"January 1, 2026", readTime:"5 min read",
+      excerpt:"An overflowing list is a packing problem, not a productivity problem.",
+      image:U("photo-1454165804606-c3d57bc86b40",900), imageLg:U("photo-1454165804606-c3d57bc86b40",1400),
+      imageAlt:"An open planner, pen and coffee on a calm workspace",
+      body:[
+        "An overflowing to-do list is rarely a productivity problem — it is a packing problem. Everything feels urgent because everything is in one undifferentiated pile.",
+        "## Empty your head, once",
+        "Take ten minutes and write down every task, worry and half-remembered obligation — everything. The mind is a terrible storage facility; the page is a brilliant one. The fog lifts noticeably the moment nothing is being silently remembered.",
+        "## Choose the day’s honest three",
+        "Circle the three things that would make today feel successful if nothing else happened. Schedule those into actual times. Everything else moves to a separate later list — not deleted, just honestly parked where it can wait without nagging.",
+        "## Look at the list weekly, not hourly",
+        "Once a week — Sunday evening suits most people — review the later list, promote what has ripened, and delete what has quietly expired. This is where calm comes from: a system where nothing urgent can ambush you, because everything already has a place to wait."
+      ]},
+
+    p3: { category:"Productivity", title:"Simple Ways to Organize Your Week", author:"Nora Lindqvist",
+      date:"December 26, 2025", readTime:"4 min read",
+      excerpt:"Twenty minutes once a week, gentle themes and protected white space.",
+      image:U("photo-1450101499163-c8848c66ca85",900), imageLg:U("photo-1450101499163-c8848c66ca85",1400),
+      imageAlt:"Hand writing a weekly plan with a fountain pen on crisp paper",
+      body:[
+        "A well-organised week is not one that is full — it is one where everything lives in the right place, and there is still space left to breathe.",
+        "## The twenty-minute Sunday plan",
+        "Sit down once a week with your calendar and your task list. Move appointments into view, choose your three priorities, and assign the small errands to specific days. Twenty minutes now saves a hundred small decisions later.",
+        "## Give days a theme",
+        "When your days have gentle themes — Monday for planning, Tuesday for errands, Thursday for deep work, Friday for people — similar tasks batch together and stop scattering across the week. Themes are not rigid; they are defaults you can override.",
+        "## Protect the white space",
+        "Leave one evening and one weekend morning deliberately unscheduled. White space is not wasted space — it is where the week bends instead of breaks when life inevitably surprises you."
+      ]},
+
+    p4: { category:"Productivity", title:"Digital Tools That Make Everyday Life Easier", author:"Sofia Marchetti",
+      date:"December 16, 2025", readTime:"5 min read",
+      excerpt:"The right few tools, quietly doing their jobs, remove dozens of daily frictions.",
+      image:U("photo-1553877522-43269d4ea984",900), imageLg:U("photo-1553877522-43269d4ea984",1400),
+      imageAlt:"Woman using her laptop and phone together to organize her day",
+      body:[
+        "The right few digital tools, quietly doing their jobs, remove dozens of small daily frictions. The wrong many become one more thing to manage.",
+        "## The essential stack",
+        "One calendar, trusted completely — every appointment, reminder and birthday lives there. One notes app as a single inbox for everything you need to remember. A shared grocery list the whole household can edit. A password manager so logins stop being a daily negotiation. And a simple focus timer for the work that matters.",
+        "## Fewer tools, better used",
+        "Most people do not need more apps; they need one of each kind, used consistently. Every extra tool adds one more place things can hide. Delete what you have not opened in a month, and turn off every notification that is not from an actual human.",
+        "## Keep the phone in its place",
+        "Charge it outside the bedroom. Leave it in a bag at meals. The goal of digital tools is a life that runs smoothly enough that you can look up from them — and that is the feature no app will ever advertise."
+      ]},
+
+    j1: { category:"Wellness", title:"A Gentle Guide to Eating Well Without Rules", author:"June Okafor",
+      date:"December 24, 2025", readTime:"5 min read",
+      excerpt:"No rules, no guilt, no complicated plans — just a calm, realistic way to feel good about food again.",
+      image:U("photo-1512621776951-a57141f2eefd",900), imageLg:U("photo-1512621776951-a57141f2eefd",1400),
+      imageAlt:"Colourful, nourishing salad bowls on a wooden table",
+      body:[
+        "Eating well has been made unnecessarily complicated. Between the diets, the labels and the moral vocabulary — clean, guilty, cheat — a basic human pleasure has become a source of quiet stress.",
+        "## Start from enough",
+        "Most days, most meals, aim for a simple shape: something colourful, something with protein, something you actually enjoy. Not perfectly — just enough. A relaxed pattern you keep beats a perfect one you abandon.",
+        "## The gentle additions",
+        "Instead of removing foods, practise adding: a vegetable you like at lunch, water alongside the coffee, a proper breakfast that holds you until lunch. Addition feels like care; restriction feels like punishment — and care is what lasts.",
+        "## Pleasure is a nutrient",
+        "A slow dinner with people you love does something for you that no meal plan captures. When food is both nourishing and enjoyable, you stop needing rules — the plate sorts itself out."
+      ]},
+
+    j2: { category:"Wellness", title:"A 10-Minute Evening Stretch to Unwind", author:"Mia Sorensen",
+      date:"December 15, 2025", readTime:"4 min read",
+      excerpt:"Ten slow minutes before bed that tell the nervous system the day is over.",
+      image:U("photo-1544367567-0f2fcb009e0b",900), imageLg:U("photo-1544367567-0f2fcb009e0b",1400),
+      imageAlt:"Woman practicing a gentle yoga stretch in soft light",
+      body:[
+        "A long day lives in the body: tight shoulders, a stiff neck, a jaw you did not notice clenching. Ten minutes of gentle stretching before bed tells the nervous system, in its own language, that the day is over.",
+        "## The sequence",
+        "Sit on the floor and just breathe for one minute — slow exhales. Neck rolls and shoulder circles, one minute each. A gentle seated twist to each side. A forward fold with soft knees. Legs up the wall for three or four minutes, eyes closed. Finish with one long breath, and go to bed.",
+        "## Make it a ritual",
+        "Same time, same spot, maybe a candle or quiet music. The repetition itself becomes the signal — the body learns that this stretch means the day is finished, and sleep comes easier.",
+        "No flexibility required. This is not exercise; it is an exhale you can feel."
+      ]},
+
+    j3: { category:"Wellness", title:"Slow Sunday Breakfasts Worth Waking Up For", author:"Clara Beaumont",
+      date:"December 8, 2025", readTime:"4 min read",
+      excerpt:"Fifteen unhurried minutes, a real plate and no deadline — the week’s kindest meal.",
+      image:U("photo-1484723091739-30a097e8f929",900), imageLg:U("photo-1484723091739-30a097e8f929",1400),
+      imageAlt:"A slow, beautiful Sunday breakfast plate with warm toast and berries",
+      body:[
+        "Sunday breakfast is the one meal of the week with no deadline before it. It deserves more than the weekday toast — and it needs less effort than you think.",
+        "## The formula",
+        "Pick one thing that can cook itself — eggs baking in the oven, oats simmering, batter resting — while you set the table properly, make the coffee slowly, and sit down. Fifteen unhurried minutes, a real plate, maybe flowers or a cloth napkin.",
+        "## Ideas for the coming Sundays",
+        "Baked eggs with tomatoes and crusty bread. Thick oat porridge with honey and whatever fruit is softening. Golden pancakes with yoghurt. Buttered toast with a soft-boiled egg — a small feast, taken seriously.",
+        "The point is not the food. It is beginning the last day of the week at the table, instead of in a hurry."
+      ]},
+
+    j4: { category:"Beauty", title:"The Order of Your Skincare Steps Actually Matters", author:"Nora Lindqvist",
+      date:"January 6, 2026", readTime:"5 min read",
+      excerpt:"Thinnest to thickest. The one rule that lets every product do its job.",
+      image:U("photo-1571781926291-c477ebfd024b",900), imageLg:U("photo-1571781926291-c477ebfd024b",1400),
+      imageAlt:"Minimal skincare bottles arranged in soft pink light",
+      body:[
+        "You can own the perfect products and still see little change if they go on in the wrong order. The rule is beautifully simple: thinnest to thickest.",
+        "## The order, simply",
+        "Cleanser first, always. Then any watery treatments or essences, then serums, then a moisturiser to seal everything in — and SPF as the final morning step. Oils, where you use them, come after cream: they seal, so they go last.",
+        "## Why it matters",
+        "Each layer partially blocks the one after it. A rich cream applied before a thin serum buffers its actives away from the skin; the serum ends up moisturising the cream instead of you. Thinnest-to-thickest lets every layer arrive where it was meant to go.",
+        "Give each layer thirty seconds to settle, and your three-step routine quietly becomes as effective as a ten-step one."
+      ]},
+
+    j5: { category:"Beauty", title:"How to Care for Dry Hands This Winter", author:"Amelia Byrne",
+      date:"December 19, 2025", readTime:"3 min read",
+      excerpt:"Lukewarm water, damp skin and one overnight trick that undoes a week of winter.",
+      image:U("photo-1540555700478-4be289fbecef",900), imageLg:U("photo-1540555700478-4be289fbecef",1400),
+      imageAlt:"Spa stones with a soft flower in warm, candle-lit tones",
+      body:[
+        "Winter hands — tight, rough, sometimes cracked at the knuckles — are one of the season’s small miseries. They are also one of its easiest fixes.",
+        "## The two-minute routine",
+        "Wash with lukewarm, not hot, water — heat strips the skin’s own oils. Pat almost dry, and while hands are still slightly damp, press in a rich cream: damp skin locks in far more moisture. Reapply after every wash; the sink is the routine.",
+        "## The overnight repair",
+        "Once or twice a week, layer a thick balm or ointment on before bed and sleep in cotton gloves — or even soft socks. One night of this can undo a week of cold air and hot water.",
+        "Keep a tube by every sink and one in your bag; hand cream only works when it is within reach."
+      ]},
+
+    j6: { category:"Beauty", title:"What ‘Gentle Skincare’ Really Means", author:"Sofia Marchetti",
+      date:"December 12, 2025", readTime:"5 min read",
+      excerpt:"It’s how you treat skin — not just what’s printed on the bottle.",
+      image:U("photo-1556228720-195a672e8a03",900), imageLg:U("photo-1556228720-195a672e8a03",1400),
+      imageAlt:"A hand holding a simple cream jar in soft, warm light",
+      body:[
+        "Gentle has become skincare’s favourite word — printed on bottles that then sting, tingle and redden. Here is what it should actually mean.",
+        "## Gentle is how you treat skin, not just what’s in the bottle",
+        "It means lukewarm water and short cleansing. It means pressing products in rather than rubbing. It means one active at a time, introduced slowly. It means listening when skin says no — redness, stinging and flaking are messages, not adjustments to push through.",
+        "## The gentle minimum",
+        "A mild cleanser, a moisturiser that feels comfortable, SPF, and patience. Skin renews itself steadily when it is simply not being irritated — which is why the gentlest routines so often produce the calmest, brightest skin.",
+        "Strong is not a skincare goal. Healthy is — and healthy skin is almost always skin that is being treated kindly."
+      ]},
+
+    j7: { category:"Home", title:"Five Low-Light Plants for a Calmer Home", author:"June Okafor",
+      date:"December 14, 2025", readTime:"4 min read",
+      excerpt:"You don’t need a sunroom — just forgiving greens and slightly restrained watering.",
+      image:U("photo-1463320726281-696a485928c7",900), imageLg:U("photo-1463320726281-696a485928c7",1400),
+      imageAlt:"Small green plants growing in glass jars on a bright windowsill",
+      body:[
+        "You do not need a bright sunroom to live among plants. Some of the calmest, most forgiving greens thrive in the soft light most homes actually have.",
+        "## The five",
+        "The peace lily, with its white blooms and deep green leaves, forgives almost everything. The snake plant tolerates dim corners and forgetful watering. Pothos trails happily from a shelf and grows almost on goodwill. The ZZ plant is nearly indestructible. And most ferns love the gentle humidity of a bathroom.",
+        "## Keeping them happy",
+        "Low light still means light: rotate plants occasionally toward the window, water less than you think — most houseplants die of kindness, not neglect — and wipe the leaves every few weeks so they can breathe.",
+        "Plants slow a room down. Five pots of green will change how a corner feels more than almost any purchase you were considering."
+      ]},
+
+    j8: { category:"Home", title:"Why Making Your Bed Changes Your Morning", author:"Clara Beaumont",
+      date:"December 10, 2025", readTime:"3 min read",
+      excerpt:"Ninety seconds that quietly change the room, the morning and the evening.",
+      image:U("photo-1505693416388-ac5ce068fe85",900), imageLg:U("photo-1505693416388-ac5ce068fe85",1400),
+      imageAlt:"A bright white bedroom with crisp, freshly made bedding",
+      body:[
+        "It takes ninety seconds. It is possibly the smallest habit in your entire day — and it quietly changes the room, the morning, and even the evening.",
+        "## The first win",
+        "Making the bed is the day’s first completed task, done before breakfast. It is a small vote for the person you intend to be today — and psychology is strangely on the side of small, visible wins repeated daily.",
+        "## What it does to the room",
+        "An unmade bed dominates a bedroom, no matter how tidy the rest is. Made, it becomes a calm centre — and coming back to it at night feels like arriving somewhere cared for, not somewhere abandoned at seven in the morning.",
+        "Ninety seconds, once a day. Try it for a week and notice what it does to the mornings."
+      ]},
+
+    j9: { category:"Style", title:"Five Questions to Help You Find Your Personal Style", author:"Nora Lindqvist",
+      date:"December 17, 2025", readTime:"5 min read",
+      excerpt:"Your style is a pattern written by your real life. Five questions to read it.",
+      image:U("photo-1487222477894-8943e31ef7b2",900), imageLg:U("photo-1487222477894-8943e31ef7b2",1400),
+      imageAlt:"Woman in an elegant warm-toned outfit, photographed in soft studio light",
+      body:[
+        "Personal style is not something you shop for — it is something you notice. Five questions, answered honestly, will bring yours into focus.",
+        "## The questions",
+        "One: what do you reach for when no one is looking? Two: which compliments have you actually believed? Three: what do you feel best in — not look best in, feel best in? Four: whose style stops you mid-scroll, and what specifically is it — the palette, the silhouette, the attitude? Five: what do you want clothes to say about you on an ordinary Tuesday?",
+        "## From answers to wardrobe",
+        "Patterns will appear — a colour that keeps returning, a cut that keeps feeling right. Your style is that pattern, written by your real life. Choose three words from your answers — relaxed, warm, put-together — and let every future purchase audition against them.",
+        "Style is not a personality you acquire. It is the one you already have, finally dressed for."
+      ]},
+
+    j10: { category:"Style", title:"How to Shop Less, But Better", author:"Amelia Byrne",
+      date:"December 11, 2025", readTime:"5 min read",
+      excerpt:"The most stylish wardrobes are rarely the fullest — they’re the ones bought slowly.",
+      image:U("photo-1441986300917-64674bd600d8",900), imageLg:U("photo-1441986300917-64674bd600d8",1400),
+      imageAlt:"A bright, calm boutique with clothes displayed on neat rails",
+      body:[
+        "The most stylish wardrobes are rarely the fullest. They are the ones bought slowly, with intent — where almost everything is worn, loved and actually used.",
+        "## The pause",
+        "Keep a wishlist in your notes app. Every wanting goes there for two weeks. If it is still wanted after fourteen days of ordinary life, it was probably real; most are not. This single habit halves impulse purchases without a single rule.",
+        "## Cost per wear",
+        "A coat worn two hundred times for three hundred is cheaper than a top worn twice for thirty. Buy the best version of the things you wear daily — shoes, coats, knitwear — and be forgiving with the trends.",
+        "## Fall back in love",
+        "Before adding, subtract and rearrange: rediscover the back of your own closet, tailor what almost fits, repair what you love. The most sustainable garment is the one already hanging there."
+      ]},
+
+    j11: { category:"Productivity", title:"The Sunday Habit That Sets Up a Calmer Week", author:"Mia Sorensen",
+      date:"December 13, 2025", readTime:"4 min read",
+      excerpt:"Twenty quiet minutes on Sunday evening can change the texture of the whole week.",
+      image:U("photo-1506784983877-45594efa4cbe",900), imageLg:U("photo-1506784983877-45594efa4cbe",1400),
+      imageAlt:"A calm workspace with laptop, notebook and coffee ready for planning",
+      body:[
+        "Twenty minutes on Sunday evening, done gently, can change the whole texture of the week. It is not planning — it is arriving early.",
+        "## The ritual",
+        "Brew something warm. Open the calendar and look at the week honestly: what is actually happening, where are the hard parts, what needs preparing now. Write your three real priorities. Check nothing else — no inbox, no feeds. Just the week, seen clearly.",
+        "## Why Sunday",
+        "Monday-morning planning is already too late: the week has started, and you are planning inside the noise. Sunday evening holds the last quiet vantage point — you can see the whole week from there, while it is still empty of urgency.",
+        "Twenty minutes, one candle, one calendar. The simplest habit with the widest reach."
+      ]},
+
+    j12: { category:"Productivity", title:"How to End Your Workday on Time (and on Purpose)", author:"Sofia Marchetti",
+      date:"December 9, 2025", readTime:"4 min read",
+      excerpt:"The workday rarely ends itself. A closing ritual, and an invented commute.",
+      image:U("photo-1486312338219-ce68d2c6f44d",900), imageLg:U("photo-1486312338219-ce68d2c6f44d",1400),
+      imageAlt:"Hands resting on a laptop as the workday gently closes",
+      body:[
+        "The end of the workday rarely ends itself. Without a deliberate boundary it bleeds into the evening — one more email, one more tab — and rest never quite begins.",
+        "## The closing ritual",
+        "Choose a time and honour it. Spend the final ten minutes writing tomorrow’s three tasks, tidying the desk, and closing every tab and window — physically closing them. A visible shutdown signal tells the mind the shift is over.",
+        "## The transition",
+        "If home is also the office, the commute must be invented: a short walk around the block, a shower, changing clothes — anything that marks the border between working you and evening you.",
+        "The work will still be there tomorrow. The evening is the part that does not come back."
+      ]},
+
+    /* ---- information pages (footer links) ---- */
+    contact: { info:true, category:"Information", title:"Say Hello to Her Daily", author:"The Editors of Her Daily",
+      date:"January 2026", readTime:"1 min read",
+      excerpt:"We read everything — really.",
+      image:U("photo-1455390582262-044cdead277a",900), imageLg:U("photo-1455390582262-044cdead277a",1400),
+      imageAlt:"Stationery and a fountain pen, ready for a letter",
+      body:[
+        "We read everything — really. Whether you have a story idea, a gentle correction, a question about something we have written, or simply want to tell us which article found you at the right moment, we would love to hear from you.",
+        "## Write to us",
+        "hello@herdaily.com — for letters, ideas, collaborations and kind words. We aim to reply within a few days, though weeks get away from all of us sometimes.",
+        "## A note on pitches",
+        "We commission a small number of pieces each season. Keep it brief: who you are, the idea, and why it belongs at Her Daily. Warmth counts more than polish."
+      ]},
+
+    disclaimer: { info:true, category:"Information", title:"Disclaimer", author:"The Editors of Her Daily",
+      date:"January 2026", readTime:"1 min read",
+      excerpt:"General lifestyle content, written with care — not professional advice.",
+      image:U("photo-1507842217343-583bb7270b66",900), imageLg:U("photo-1507842217343-583bb7270b66",1400),
+      imageAlt:"A quiet library corner with warm lamplight and shelves of books",
+      body:[
+        "Her Daily publishes general lifestyle, wellness and beauty content for enjoyment and inspiration. It is written with care — but it is not medical, psychological, nutritional or financial advice, and it should never replace personal guidance from qualified professionals who know your circumstances.",
+        "## Please read this part",
+        "Any changes to your health, skincare, medication or diet deserve a conversation with your doctor or pharmacist first. What works gently for one woman can be wrong for another; bodies and lives differ, and professionals exist precisely because of that.",
+        "Articles reflect the honest views of our editors at the time of writing. Products mentioned are chosen for genuine interest, not payment; where anything is sponsored, it will be clearly labelled."
+      ]},
+
+    privacy: { info:true, category:"Information", title:"Privacy Policy", author:"The Editors of Her Daily",
+      date:"January 2026", readTime:"1 min read",
+      excerpt:"A small publication keeps a correspondingly small amount of information.",
+      image:U("photo-1499951360447-b119be8cfd7d",900), imageLg:U("photo-1499951360447-b119be8cfd7d",1400),
+      imageAlt:"A laptop and notebook on a clean desk",
+      body:[
+        "Her Daily is a small publication, and we keep a correspondingly small amount of information — only what a calm website needs to work.",
+        "## What we hold",
+        "If you subscribe to the newsletter, we hold your email address, solely to send occasional letters. Nothing is sold, rented or shared with third parties for marketing — that is the entire policy.",
+        "## Cookies and analytics",
+        "The site uses only what is technically necessary to run smoothly. No advertising trackers, no follow-you-around-the-internet pixels.",
+        "## Leaving",
+        "You can unsubscribe with one click at any time, and your address is removed. Questions or requests about your data can be sent to hello@herdaily.com."
+      ]}
+  };
+
+  /* ================= THEMED IMAGE FALLBACKS =================
+     If a photo URL ever fails, a safe themed backup is swapped in
+     so the layout never breaks. */
+  const FALLBACKS = {
+    wellness:     U("photo-1506126613408-eca07ce68773", 900),
+    beauty:       U("photo-1487412720507-e7ab37603c6f", 900),
+    home:         U("photo-1513694203232-719a280e022f", 900),
+    style:        U("photo-1445205170230-053b83016050", 900),
+    productivity: U("photo-1524250502761-1ac6f2e30d43", 900),
+    "default":    U("photo-1495474472287-4d71bcdd2085", 900)
+  };
+  document.addEventListener("error", function(e){
+    const t = e.target;
+    if (!(t instanceof HTMLImageElement) || t.dataset.fbDone) return;
+    t.dataset.fbDone = "1";
+    const holder = t.closest("[data-img-theme]");
+    const theme  = holder ? holder.getAttribute("data-img-theme") : "default";
+    t.src = FALLBACKS[theme] || FALLBACKS["default"];
+  }, true);
+
+  /* ================= ELEMENTS ================= */
+  const header      = $("#siteHeader");
+  const menuBtn     = $("#menuBtn");
+  const mobileNav   = $("#mobileNav");
+  const searchBtn   = $("#searchBtn");
+  const searchOverlay = $("#searchOverlay");
+  const searchClose = $("#searchClose");
+  const searchInput = $("#searchInput");
+  const searchResults = $("#searchResults");
+  const modal       = $("#articleModal");
+  const modalClose  = $("#modalClose");
+  const modalScroll = $("#modalScroll");
+  const modalImage  = $("#modalImage");
+  const modalCategory = $("#modalCategory");
+  const modalMeta   = $("#modalMeta");
+  const modalTitle  = $("#modalTitle");
+  const modalDek    = $("#modalDek");
+  const modalBody   = $("#modalBody");
+  const modalAuthor = $("#modalAuthor");
+  const modalRelated = $("#modalRelated");
+  const modalPanel  = modal.querySelector(".modal-panel");
+  const toTop       = $("#toTop");
+  const form        = $("#newsletterForm");
+  const emailInput  = $("#emailInput");
+  const errEl       = $("#newsletterError");
+  const successEl   = $("#newsletterSuccess");
+  const noteEl      = $("#newsletterNote");
+
+  let lastFocus = null;
+
+  const lockScroll = on => document.body.classList.toggle("no-scroll", on);
+
+  /* ================= HEADER / SCROLL ================= */
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("scrolled", window.scrollY > 10);
+    toTop.classList.toggle("show", window.scrollY > 650);
+  }, { passive:true });
+
+  toTop.addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
+
+  /* active nav highlighting */
+  const navLinks = $$(".nav-link");
+  const watchedSections = ["home","wellness","beauty","daily-life","style","productivity","articles"]
+    .map(id => document.getElementById(id)).filter(Boolean);
+  if ("IntersectionObserver" in window) {
+    const navIO = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          const href = "#" + en.target.id;
+          navLinks.forEach(l => l.classList.toggle("active", l.getAttribute("href") === href));
+        }
+      });
+    }, { rootMargin:"-45% 0px -50% 0px" });
+    watchedSections.forEach(s => navIO.observe(s));
+  }
+
+  /* ================= MOBILE NAV ================= */
+  function toggleDrawer(open){
+    mobileNav.classList.toggle("open", open);
+    menuBtn.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    mobileNav.setAttribute("aria-hidden", String(!open));
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    lockScroll(open);
+  }
+  menuBtn.addEventListener("click", () => toggleDrawer(!mobileNav.classList.contains("open")));
+  $$(".mobile-link").forEach(l => l.addEventListener("click", () => toggleDrawer(false)));
+
+  /* ================= SEARCH ================= */
+  function openSearch(){
+    toggleDrawer(false);
+    searchOverlay.classList.add("open");
+    lockScroll(true);
+    setTimeout(() => searchInput.focus(), 60);
+  }
+  function closeSearch(){
+    searchOverlay.classList.remove("open");
+    lockScroll(false);
+  }
+  searchBtn.addEventListener("click", openSearch);
+  searchClose.addEventListener("click", closeSearch);
+
+  function renderResultRow(id, a){
+    return '<button class="search-result" data-article="' + id + '">' +
+      '<img src="' + a.image + '" alt="" loading="lazy">' +
+      '<span class="sr-text"><span class="sr-cat">' + a.category + '</span>' +
+      '<span class="sr-title">' + a.title + '</span>' +
+      '<span class="sr-meta">' + a.readTime + ' · ' + a.date + '</span></span></button>';
+  }
+  function runSearch(q){
+    q = q.trim().toLowerCase();
+    if (!q) {
+      searchResults.innerHTML = '<p class="search-hint">Popular right now: morning routines · skincare · wardrobe · planners</p>';
+      return;
+    }
+    const hits = Object.keys(ARTICLES)
+      .filter(id => !ARTICLES[id].info)
+      .filter(id => (ARTICLES[id].title + " " + ARTICLES[id].category + " " + ARTICLES[id].excerpt).toLowerCase().includes(q))
+      .slice(0, 8);
+    searchResults.innerHTML = hits.length
+      ? hits.map(id => renderResultRow(id, ARTICLES[id])).join("")
+      : '<p class="search-empty">Nothing found. Try “sleep”, “style” or “reset”.</p>';
+  }
+  searchInput.addEventListener("input", () => runSearch(searchInput.value));
+
+  /* ================= ARTICLE MODAL ================= */
+  const THEME_BY_CATEGORY = { Wellness:"wellness", Beauty:"beauty", Home:"home", Style:"style", Productivity:"productivity" };
+
+  function renderBody(body){
+    return body.map(b => {
+      if (b.indexOf("## ") === 0) return "<h3>" + b.slice(3) + "</h3>";
+      if (b.indexOf("> ")  === 0) return "<blockquote>" + b.slice(2) + "</blockquote>";
+      return "<p>" + b + "</p>";
+    }).join("");
+  }
+
+  function renderRelated(currentId, category){
+    const pool = Object.keys(ARTICLES)
+      .filter(id => id !== currentId && !ARTICLES[id].info && ARTICLES[id].category === category);
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    modalRelated.innerHTML = pool.slice(0, 3).map(id => {
+      const a = ARTICLES[id];
+      return '<a class="related-card" href="#" data-article="' + id + '" aria-label="Read: ' + a.title + '">' +
+        '<img src="' + a.image + '" alt="' + a.imageAlt + '" loading="lazy">' +
+        '<span class="related-text"><span class="related-cat">' + a.category + '</span>' +
+        '<span class="related-title-span">' + a.title + '</span></span></a>';
+    }).join("");
+  }
+
+  function openArticle(id){
+    const a = ARTICLES[id];
+    if (!a) return;
+    closeSearch();
+    toggleDrawer(false);
+
+    modalPanel.setAttribute("data-img-theme", THEME_BY_CATEGORY[a.category] || "default");
+    delete modalImage.dataset.fbDone;
+    modalImage.src = a.imageLg || a.image;
+    modalImage.alt = a.imageAlt;
+
+    modalCategory.textContent = a.category;
+    modalMeta.textContent = a.date + "  ·  " + a.readTime;
+    modalTitle.textContent = a.title;
+    modalDek.textContent = a.excerpt;
+    modalBody.innerHTML = renderBody(a.body);
+    modalAuthor.textContent = "Words by " + a.author;
+    renderRelated(id, a.category);
+
+    lastFocus = document.activeElement;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    lockScroll(true);
+    modalScroll.scrollTop = 0;
+    modalClose.focus();
+  }
+
+  let closingTimer = null;
+  function closeModal(){
+    if (!modal.classList.contains("open")) return;
+    modal.classList.add("closing");
+    clearTimeout(closingTimer);
+    closingTimer = setTimeout(() => {
+      modal.classList.remove("open", "closing");
+      modal.setAttribute("aria-hidden", "true");
+      lockScroll(false);
+      if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+    }, 240);
+  }
+
+  modal.addEventListener("click", e => {
+    if (e.target.closest("[data-close-modal]")) closeModal();
+  });
+  modalClose.addEventListener("click", closeModal);
+
+  /* focus trap inside modal */
+  modalPanel.addEventListener("keydown", e => {
+    if (e.key !== "Tab") return;
+    const focusables = Array.from(modalPanel.querySelectorAll("button, a[href], [tabindex]:not([tabindex='-1'])"))
+      .filter(el => el.offsetParent !== null);
+    if (!focusables.length) return;
+    const first = focusables[0], last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+    else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+  });
+
+  /* open any element carrying data-article (cards, buttons, related, footer links, search rows) */
+  document.addEventListener("click", e => {
+    const trigger = e.target.closest("[data-article]");
+    if (trigger) { e.preventDefault(); openArticle(trigger.getAttribute("data-article")); }
+    const social = e.target.closest("[data-social]");
+    if (social) e.preventDefault();
+  });
+
+  /* ================= JOURNAL FILTERS ================= */
+  const filterBtns = $$(".filter-btn");
+  const journalCards = $$("#journalGrid .article-card");
+  filterBtns.forEach(btn => btn.addEventListener("click", () => {
+    filterBtns.forEach(b => b.classList.toggle("active", b === btn));
+    const f = btn.getAttribute("data-filter");
+    journalCards.forEach(card => {
+      const show = f === "all" || card.getAttribute("data-category") === f;
+      card.classList.toggle("is-hidden", !show);
+    });
+  }));
+
+  /* ================= NEWSLETTER ================= */
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const value = emailInput.value.trim();
+    if (!EMAIL_RE.test(value)) {
+      errEl.hidden = false;
+      emailInput.classList.add("invalid");
+      emailInput.focus();
+      return;
+    }
+    errEl.hidden = true;
+    form.hidden = true;
+    noteEl.hidden = true;
+    successEl.hidden = false;
+  });
+  emailInput.addEventListener("input", () => {
+    errEl.hidden = true;
+    emailInput.classList.remove("invalid");
+  });
+
+  /* ================= GLOBAL KEYBOARD ================= */
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      if (modal.classList.contains("open")) closeModal();
+      else if (searchOverlay.classList.contains("open")) closeSearch();
+      else if (mobileNav.classList.contains("open")) toggleDrawer(false);
+    }
+  });
+
+  /* ================= REVEAL ON SCROLL ================= */
+  $$(".card-grid, .journal-grid, .mini-grid").forEach(g => {
+    Array.from(g.children).forEach((c, i) => c.style.setProperty("--d", Math.min(i * 90, 360) + "ms"));
+  });
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) { en.target.classList.add("in-view"); io.unobserve(en.target); }
+      });
+    }, { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+    $$(".reveal").forEach(el => io.observe(el));
+    /* once revealed, hand transform back to hover effects */
+    document.addEventListener("animationend", e => {
+      if (e.target.classList && e.target.classList.contains("in-view")) {
+        e.target.classList.add("revealed");
+        e.target.classList.remove("in-view");
+      }
+    });
+  } else {
+    $$(".reveal").forEach(el => el.classList.add("revealed"));
+  }
+
+  /* tidy drawer state on resize to desktop */
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 940 && mobileNav.classList.contains("open")) toggleDrawer(false);
+  });
+
+})();
+</script>
+</body>
+</html>
